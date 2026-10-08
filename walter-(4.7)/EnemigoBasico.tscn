@@ -1,26 +1,48 @@
 [gd_scene format=3 uid="uid://cg7qt4sika6tn"]
 
 [ext_resource type="Script" uid="uid://bhk1nvlyal2ab" path="res://enemigo_basico.gd" id="1_66cme"]
+[ext_resource type="Texture2D" uid="uid://tptu8gaxrp3v" path="res://assets/fotograma0000.png" id="2_2quo8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_66cme"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_2quo8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6ycbm"]
+radius = 19.0
+height = 78.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2quo8"]
-radius = 14.0
-height = 46.0
+radius = 32.0
+height = 80.0
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=313786327 groups=["enemigo"]]
 modulate = Color(1, 0, 0, 1)
 self_modulate = Color(1, 0, 0, 1)
-position = Vector2(70, 23)
+position = Vector2(-23, -26)
 script = ExtResource("1_66cme")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1728848055]
 modulate = Color(1, 0, 0, 1)
-position = Vector2(45, 8)
+position = Vector2(52.99994, 11.000004)
+scale = Vector2(0.10331558, 0.10331558)
+sprite_frames = SubResource("SpriteFrames_66cme")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=140863202 groups=["enemigo"]]
-position = Vector2(44, 13)
+position = Vector2(51, 9)
+shape = SubResource("CapsuleShape2D_6ycbm")
+one_way_collision_margin = 0.0
+debug_color = Color(0.99607843, 0, 0, 0.41960785)
 
 [node name="AreaDano" type="Area2D" parent="." unique_id=1011279933]
 position = Vector2(45, 24)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AreaDano" unique_id=1964633026]
+position = Vector2(6, -14)
 shape = SubResource("CapsuleShape2D_2quo8")

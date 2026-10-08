@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://nub17vswsmje"]
 
+[ext_resource type="Script" uid="uid://dxv65j6gk1yke" path="res://UI.gd" id="1_dy835"]
+
 [node name="Node2D" type="CanvasLayer" unique_id=1959056839]
+script = ExtResource("1_dy835")
 
 [node name="tanques H2O" type="ProgressBar" parent="." unique_id=1347630099]
 anchors_preset = -1
@@ -45,3 +48,11 @@ offset_left = -0.3600006
 offset_top = -0.2400055
 offset_right = -0.480011
 offset_bottom = 0.11999512
+
+[node name="LabelTanques" type="Label" parent="." unique_id=1969779364]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="BarraSalud" type="TextureProgressBar" parent="." unique_id=737182121]
+offset_right = 40.0
+offset_bottom = 40.0
