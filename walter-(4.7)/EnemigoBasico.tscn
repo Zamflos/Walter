@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cg7qt4sika6tn"]
+
+[ext_resource type="Script" uid="uid://bhk1nvlyal2ab" path="res://enemigo_basico.gd" id="1_66cme"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2quo8"]
+radius = 14.0
+height = 46.0
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=313786327 groups=["enemigo"]]
+modulate = Color(1, 0, 0, 1)
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(70, 23)
+script = ExtResource("1_66cme")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1728848055]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(45, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=140863202 groups=["enemigo"]]
+position = Vector2(44, 13)
+
+[node name="AreaDano" type="Area2D" parent="." unique_id=1011279933]
+position = Vector2(45, 24)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaDano" unique_id=1964633026]
+shape = SubResource("CapsuleShape2D_2quo8")

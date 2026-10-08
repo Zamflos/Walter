@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://on6koeit374w"]
+
+[ext_resource type="Script" uid="uid://becfaxb44cxgn" path="res://arpon.gd" id="1_f73kh"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f73kh"]
+radius = 11.5
+height = 73.0
+
+[node name="Area2D" type="Area2D" unique_id=678330115]
+modulate = Color(1, 0, 0, 1)
+show_behind_parent = true
+script = ExtResource("1_f73kh")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1328144695]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2116634920]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-1, 0)
+shape = SubResource("CapsuleShape2D_f73kh")
+debug_color = Color(1, 0, 0, 0.41960785)
