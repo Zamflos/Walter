@@ -78,25 +78,23 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w8kgb"]
-radius = 75.0
-height = 186.0
+radius = 39.0
+height = 126.0
 
 [node name="Jugador" type="CharacterBody2D" unique_id=208515783 groups=["jugadores"]]
 script = ExtResource("1_43k7d")
 arpon_scene = ExtResource("2_defnh")
 
 [node name="animatedwalk" type="AnimatedSprite2D" parent="." unique_id=1208393555]
-position = Vector2(5.9999847, -119)
-scale = Vector2(0.22930978, 0.27414632)
+position = Vector2(-46.88582, -65.270164)
+scale = Vector2(0.1584211, 0.18817858)
 sprite_frames = SubResource("SpriteFrames_7ksya")
 animation = &"walk"
-frame = 3
-frame_progress = 0.50661343
 offset = Vector2(5, 5)
 
 [node name="animatedstanding" type="AnimatedSprite2D" parent="." unique_id=1191710843]
-position = Vector2(4.063711, -106.67322)
-scale = Vector2(0.24228343, 0.26882407)
+position = Vector2(-43.16578, -64.33449)
+scale = Vector2(0.18818322, 0.20108213)
 sprite_frames = SubResource("SpriteFrames_48d6w")
 animation = &"standing"
 frame = 5
@@ -104,7 +102,7 @@ frame_progress = 0.42498785
 offset = Vector2(5, 5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1587166060]
-position = Vector2(0, -94)
+position = Vector2(-53, -57)
 shape = SubResource("CapsuleShape2D_w8kgb")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=281917363]

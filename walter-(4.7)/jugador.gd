@@ -114,23 +114,28 @@ func ejecutar_dash(dir: float) -> void:
 	esta_haciendo_dash = true
 	puede_hacer_dash = false
 	
-	# Determina la dirección actual según la orientación de los sprites
+	# Flash del dash
+	modulate = Color(0.6, 1.2, 1.5)
+	
 	var direccion_dash = dir
 	if direccion_dash == 0:
 		direccion_dash = -1.0 if sprite_walk.flip_h else 1.0
 		
 	velocity.x = direccion_dash * velocidad_dash
-	velocity.y = 0 # Mantiene altura durante el dash
+	velocity.y = 0
 
-	# Temporizador de la duración del Dash
 	await get_tree().create_timer(duracion_dash).timeout
 	esta_haciendo_dash = false
+	modulate = Color(1, 1, 1)   # vuelve al color normal
 
-	# Temporizador de recarga (Cooldown)
 	await get_tree().create_timer(recarga_dash).timeout
 	puede_hacer_dash = true
-
 func atacar() -> void:
+	# Flash visual rápido
+	modulate = Color(1.5, 1.5, 1.5)
+	await get_tree().create_timer(0.07).timeout
+	modulate = Color(1, 1, 1)
+	
 	if arpon_scene == null:
 		push_warning("No se ha asignado la escena del arpón (arpon_scene)")
 		return
