@@ -4,7 +4,7 @@ Caja.tscn::PackedScene::5839213890920498897::1791998570::0::1::::<><><>0<>0<><>:
 icon.svg::CompressedTexture2D::3161182676264362580::1791998570::1792429412::1::::<><><>0<>0<>4f60c12a35325030e88ae06b8c62740a<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 jugador.gd::GDScript::7394633444291048265::1791998570::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Jugador.tscn::PackedScene::4402130053145438630::1791998570::0::1::::<><><>0<>0<><>::uid://ddmasdry2j2xx::::res://jugador.gd
-NivelBase.tscn::PackedScene::1962268799856687874::1791998570::0::1::::<><><>0<>0<><>::uid://b3yoo6jhxskgs::::res://Jugador.tscn<>uid://cpgs88u1rc4o8::::res://Caja.tscn
+NivelBase.tscn::PackedScene::1962268799856687874::1792429526::0::1::::<><><>0<>0<><>::uid://b3yoo6jhxskgs::::res://Jugador.tscn<>uid://cpgs88u1rc4o8::::res://Caja.tscn<>uid://n76u1lkpvlwm::::res://nivel_01.tscn
 nivel_01.tscn::PackedScene::980434381153382588::1792429190::0::1::::<><><>0<>0<><>::uid://c3gg747725de3::::res://MAPACOLISONS/Mapa_Seccion_01.tscn<>uid://b657rgma6x4lw::::res://MAPACOLISONS/Mapa_Seccion_02.tscn<>uid://bksc7f8mejjl5::::res://MAPACOLISONS/Mapa_Seccion_03.tscn<>uid://deqjc6at6i5iu::::res://MAPACOLISONS/Mapa_Seccion_04.tscn<>uid://6tbupng8v6fo::::res://MAPACOLISONS/Mapa_Seccion_05.tscn<>uid://didq547vbkufi::::res://MAPACOLISONS/Mapa_Seccion_06.tscn<>uid://bf1wamvytw0jw::::res://MAPACOLISONS/Mapa_Seccion_07.tscn<>uid://c5jjr0bty188b::::res://MAPACOLISONS/Mapa_Seccion_08.tscn<>uid://bgubcvucp10nt::::res://MAPACOLISONS/Mapa_Seccion_09.tscn
 ::res://Assets/::1791998567
 ::res://Assets/Assets/::1792423452
