@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://27sjsgrrsdje"]
+
+[ext_resource type="Texture2D" uid="uid://bfwysmhuhs3j7" path="res://assets/fondozzz/FONDO.png" id="1_7d3k7"]
+[ext_resource type="PackedScene" uid="uid://b3yoo6jhxskgs" path="res://Jugador.tscn" id="1_vdcwy"]
+[ext_resource type="Texture2D" uid="uid://bxryl280125hb" path="res://assets/imagenes/suelo.jpg" id="2_5o5id"]
+[ext_resource type="PackedScene" uid="uid://cpgs88u1rc4o8" path="res://Caja.tscn" id="2_qm8rf"]
+[ext_resource type="PackedScene" uid="uid://ctwno0je22hx7" path="res://ControlesTactiles.tscn" id="3_qm8rf"]
+[ext_resource type="PackedScene" uid="uid://nub17vswsmje" path="res://HUB.tscn" id="4_f3834"]
+[ext_resource type="PackedScene" uid="uid://cg7qt4sika6tn" path="res://EnemigoBasico.tscn" id="5_osip8"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vdcwy"]
+distance = -72.0
+
+[node name="NivelBase" type="Node2D" unique_id=1725350296]
+position = Vector2(3, 58)
+
+[node name="Fondo" type="TextureRect" parent="." unique_id=2141650358]
+z_index = -20
+offset_left = -837.0
+offset_top = 749.0
+offset_right = 1108.0
+offset_bottom = 1285.0
+texture = ExtResource("1_7d3k7")
+expand_mode = 1
+
+[node name="Suelo" type="TextureRect" parent="." unique_id=546331299]
+z_index = -10
+offset_left = -919.0
+offset_top = 1113.0
+offset_right = 2369.0
+offset_bottom = 1319.0
+texture = ExtResource("2_5o5id")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1932515457]
+position = Vector2(565, 164)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1976072026]
+position = Vector2(28, 925)
+shape = SubResource("WorldBoundaryShape2D_vdcwy")
+debug_color = Color(0.063, 0.608, 0.652, 0.42)
+
+[node name="Jugador" parent="StaticBody2D" unique_id=156308201 instance=ExtResource("1_vdcwy")]
+position = Vector2(-360, 793)
+
+[node name="Caja" parent="StaticBody2D" unique_id=1945320706 instance=ExtResource("2_qm8rf")]
+position = Vector2(-126, 831)
+
+[node name="ControlesTactiles" parent="." unique_id=1619539230 instance=ExtResource("3_qm8rf")]
+
+[node name="HUB" parent="." unique_id=1434394209 instance=ExtResource("4_f3834")]
+
+[node name="Enemigo1" parent="." unique_id=572441692 instance=ExtResource("5_osip8")]
+position = Vector2(776, 1002)
+
+[node name="Enemigo2" parent="." unique_id=1990752748 instance=ExtResource("5_osip8")]
+position = Vector2(-289, 1027)

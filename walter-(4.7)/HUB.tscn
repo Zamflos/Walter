@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://nub17vswsmje"]
+
+[ext_resource type="Script" uid="uid://dxv65j6gk1yke" path="res://UI.gd" id="1_ui"]
+[ext_resource type="Texture2D" uid="uid://dxlbb2lymc7e" path="res://tanqueOxigeno.png" id="2_oa3m5"]
+[ext_resource type="Texture2D" uid="uid://824koiufkned" path="res://tanqueOxigenoDañado.png" id="3_hhvnk"]
+
+[node name="HUB" type="CanvasLayer" unique_id=493275506]
+layer = 10
+script = ExtResource("1_ui")
+textura_tanque_lleno = ExtResource("2_oa3m5")
+textura_tanque_roto = ExtResource("3_hhvnk")
+
+[node name="FondoHUD" type="ColorRect" parent="." unique_id=1998560421]
+offset_left = 8.0
+offset_top = 7.0
+offset_right = 318.0
+offset_bottom = 137.0
+color = Color(0, 0, 0, 0.65)
+
+[node name="LabelTanques" type="Label" parent="." unique_id=1391973046]
+offset_left = 20.0
+offset_top = 15.0
+offset_right = 200.0
+offset_bottom = 35.0
+text = "Tanques de Oxígeno"
+
+[node name="Tanque1" type="TextureRect" parent="." unique_id=1251101656]
+offset_left = 10.0
+offset_top = 33.0
+offset_right = 72.0
+offset_bottom = 95.0
+texture = ExtResource("2_oa3m5")
+expand_mode = 1
+
+[node name="Tanque2" type="TextureRect" parent="." unique_id=1713744621]
+offset_left = 50.0
+offset_top = 34.0
+offset_right = 116.0
+offset_bottom = 96.0
+texture = ExtResource("2_oa3m5")
+expand_mode = 1
+
+[node name="Tanque3" type="TextureRect" parent="." unique_id=1969827970]
+offset_left = 95.0
+offset_top = 33.0
+offset_right = 164.0
+offset_bottom = 97.0
+texture = ExtResource("2_oa3m5")
+expand_mode = 1
+
+[node name="BarraSalud" type="ProgressBar" parent="." unique_id=17925549]
+modulate = Color(0.3, 0.85, 0.4, 1)
+offset_left = 170.0
+offset_top = 45.0
+offset_right = 300.0
+offset_bottom = 70.0
+value = 100.0
+show_percentage = false
+
+[node name="LabelSalud" type="Label" parent="." unique_id=264999925]
+offset_left = 175.0
+offset_top = 45.0
+offset_right = 250.0
+offset_bottom = 70.0
+text = "Tubo"
+
+[node name="BarraBilis" type="ProgressBar" parent="." unique_id=1569453513]
+modulate = Color(0.95, 0.7, 0.15, 1)
+offset_left = 25.0
+offset_top = 98.0
+offset_right = 300.0
+offset_bottom = 123.0
+show_percentage = false
+
+[node name="LabelBilis" type="Label" parent="." unique_id=895517222]
+offset_left = 30.0
+offset_top = 100.0
+offset_right = 120.0
+offset_bottom = 125.0
+text = "Bilis"
+
+[node name="PanelInventario" type="Panel" parent="." unique_id=9841148]
+visible = false
+offset_left = 380.0
+offset_top = 80.0
+offset_right = 720.0
+offset_bottom = 340.0
