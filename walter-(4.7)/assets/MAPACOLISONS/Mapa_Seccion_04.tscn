@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://deqjc6at6i5iu"]
+
+[ext_resource type="Texture2D" uid="uid://5kx3yxx8hcc6" path="res://Assets/fondodecoracion-split/imageonline/10.png" id="1_26bck"]
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1009207102]
+position = Vector2(40.999992, 72)
+scale = Vector2(0.99109983, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1129876652]
+position = Vector2(1.008995, -4.3749666)
+scale = Vector2(0.13085938, 0.11181643)
+texture = ExtResource("1_26bck")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1510898650]
+visible = false
+polygon = PackedVector2Array(124.10455, 252.99997, 131.1674, 236.99997, 180.60742, 224.99997, 185.65233, 215.99997, 274.4426, 207.99997, 281.50543, 201.99997, 326.90955, 198.99997, 330.94547, 182, 335.99036, 150, 330.94547, 141, 317.82874, 130, 279.4875, 109.99999, 268.3887, 91.99999, 315.81076, 31, 310.76587, 12, 315.81076, 1, 312.7838, -8.999996, 370.2957, -45.999992, 399.55612, -41.999992, 409.6459, -28.999996, 457.06796, 1, 455.05002, -252.99997, -454.041, -253.99997, -455.05, 250.99997)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="." unique_id=941195832]
+visible = false
+polygon = PackedVector2Array(260.31686, 251.99997, 321.86465, 244.99997, 368.27774, 238.99997, 387.44836, 216.99997, 387.44836, 194.99997, 386.43936, 171, 394.5112, 163, 390.47528, 119.99999, 370.2957, 106.99999, 359.1969, 95.99999, 355.16098, 79.99999, 361.61652, 61.232353, 370.2957, 36, 390.47528, 25, 412.67285, 27, 457.06796, 51, 456.059, 250.99997)
