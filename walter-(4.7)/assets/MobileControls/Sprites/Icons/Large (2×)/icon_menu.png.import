@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx1cr5a7rnjb6"
-path="res://.godot/imported/icon_menu.png-792972dcd21c0f7b9197c67e1f5cd3d5.ctex"
+path="res://.godot/imported/icon_menu.png-19188f890039d47be520f4dd8e4b8495.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Sprites/Icons/Large (2×)/icon_menu.png"
-dest_files=["res://.godot/imported/icon_menu.png-792972dcd21c0f7b9197c67e1f5cd3d5.ctex"]
+source_file="res://assets/MobileControls/Sprites/Icons/Large (2×)/icon_menu.png"
+dest_files=["res://.godot/imported/icon_menu.png-19188f890039d47be520f4dd8e4b8495.ctex"]
 
 [params]
 

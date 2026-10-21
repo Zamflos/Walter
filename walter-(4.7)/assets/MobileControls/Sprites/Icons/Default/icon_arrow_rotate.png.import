@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clsdg5d4etkwk"
-path="res://.godot/imported/icon_arrow_rotate.png-8584879a1ce9037e9be35a07e8fb3f0d.ctex"
+path="res://.godot/imported/icon_arrow_rotate.png-209899dcedb1d72a6acf7f83701d6883.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Sprites/Icons/Default/icon_arrow_rotate.png"
-dest_files=["res://.godot/imported/icon_arrow_rotate.png-8584879a1ce9037e9be35a07e8fb3f0d.ctex"]
+source_file="res://assets/MobileControls/Sprites/Icons/Default/icon_arrow_rotate.png"
+dest_files=["res://.godot/imported/icon_arrow_rotate.png-209899dcedb1d72a6acf7f83701d6883.ctex"]
 
 [params]
 

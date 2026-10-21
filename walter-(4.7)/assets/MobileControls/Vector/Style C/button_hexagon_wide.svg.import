@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://casv1ugwyts53"
-path="res://.godot/imported/button_hexagon_wide.svg-e9c245ca80da67dc5b7806a19626ad8f.ctex"
+path="res://.godot/imported/button_hexagon_wide.svg-98980b92582ef5a7279f745c0eaa1867.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Vector/Style C/button_hexagon_wide.svg"
-dest_files=["res://.godot/imported/button_hexagon_wide.svg-e9c245ca80da67dc5b7806a19626ad8f.ctex"]
+source_file="res://assets/MobileControls/Vector/Style C/button_hexagon_wide.svg"
+dest_files=["res://.godot/imported/button_hexagon_wide.svg-98980b92582ef5a7279f745c0eaa1867.ctex"]
 
 [params]
 

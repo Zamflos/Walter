@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5j12jkawrpvb"
-path="res://.godot/imported/icon_steering_wheel.png-c27f4d9552961839a3226c561a4bcfbf.ctex"
+path="res://.godot/imported/icon_steering_wheel.png-eca2db13327aa116d645dbab5868a0ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Sprites/Icons/Default/icon_steering_wheel.png"
-dest_files=["res://.godot/imported/icon_steering_wheel.png-c27f4d9552961839a3226c561a4bcfbf.ctex"]
+source_file="res://assets/MobileControls/Sprites/Icons/Default/icon_steering_wheel.png"
+dest_files=["res://.godot/imported/icon_steering_wheel.png-eca2db13327aa116d645dbab5868a0ce.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfnds2omkiwil"
-path="res://.godot/imported/button_circle_highlight.png-305f452fdbcb56dd7aaf0d5f78c694aa.ctex"
+path="res://.godot/imported/button_circle_highlight.png-d429f1a44ef8652d58730f25730a0ca9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Sprites/Highlights A/Default/button_circle_highlight.png"
-dest_files=["res://.godot/imported/button_circle_highlight.png-305f452fdbcb56dd7aaf0d5f78c694aa.ctex"]
+source_file="res://assets/MobileControls/Sprites/Highlights A/Default/button_circle_highlight.png"
+dest_files=["res://.godot/imported/button_circle_highlight.png-d429f1a44ef8652d58730f25730a0ca9.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://c0ns5elmqqmil"
-path="res://.godot/imported/Boss_Sound_2.mp3-03738844bbf1721c8fd8a7b9c547b0fb.mp3str"
+path="res://.godot/imported/Boss_Sound_2.mp3-58d6f28a4dc02b1e6ec2ed928602e903.mp3str"
 
 [deps]
 
-source_file="res://Assets/sfx/Boss_Sound_2.mp3"
-dest_files=["res://.godot/imported/Boss_Sound_2.mp3-03738844bbf1721c8fd8a7b9c547b0fb.mp3str"]
+source_file="res://assets/sfx/Boss_Sound_2.mp3"
+dest_files=["res://.godot/imported/Boss_Sound_2.mp3-58d6f28a4dc02b1e6ec2ed928602e903.mp3str"]
 
 [params]
 

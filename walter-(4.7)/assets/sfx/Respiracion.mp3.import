@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://6i48vhabsql5"
-path="res://.godot/imported/Respiracion.mp3-b2cc45ec221a12800e4e2e15ec27cfa3.mp3str"
+path="res://.godot/imported/Respiracion.mp3-3ab2597ccbb482cd5e81efee4f6c1a93.mp3str"
 
 [deps]
 
-source_file="res://Assets/sfx/Respiracion.mp3"
-dest_files=["res://.godot/imported/Respiracion.mp3-b2cc45ec221a12800e4e2e15ec27cfa3.mp3str"]
+source_file="res://assets/sfx/Respiracion.mp3"
+dest_files=["res://.godot/imported/Respiracion.mp3-3ab2597ccbb482cd5e81efee4f6c1a93.mp3str"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dnd3pyn81l24m"
-path="res://.godot/imported/Damage_Sound_Effects.mp3-c7d3e602d7e54283090ba1caa5c10209.mp3str"
+path="res://.godot/imported/Damage_Sound_Effects.mp3-1af73e1fe427295e4f95973b1d9e05af.mp3str"
 
 [deps]
 
-source_file="res://Assets/sfx/Damage_Sound_Effects.mp3"
-dest_files=["res://.godot/imported/Damage_Sound_Effects.mp3-c7d3e602d7e54283090ba1caa5c10209.mp3str"]
+source_file="res://assets/sfx/Damage_Sound_Effects.mp3"
+dest_files=["res://.godot/imported/Damage_Sound_Effects.mp3-1af73e1fe427295e4f95973b1d9e05af.mp3str"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi5pk1aspfmw8"
-path="res://.godot/imported/icon_skull.svg-08bde0e2acab82f401b224bfae9a0da0.ctex"
+path="res://.godot/imported/icon_skull.svg-ae1ba284a3cebda8e51bc0d2d3eee87b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Vector/Icons/icon_skull.svg"
-dest_files=["res://.godot/imported/icon_skull.svg-08bde0e2acab82f401b224bfae9a0da0.ctex"]
+source_file="res://assets/MobileControls/Vector/Icons/icon_skull.svg"
+dest_files=["res://.godot/imported/icon_skull.svg-ae1ba284a3cebda8e51bc0d2d3eee87b.ctex"]
 
 [params]
 

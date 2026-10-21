@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwr8k26hk4tqa"
-path="res://.godot/imported/dpad_small.png-e03df16d3942909ea65b1f91640b5e33.ctex"
+path="res://.godot/imported/dpad_small.png-a83cba78104803da5a654e6050484419.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Sprites/Style D/Default/dpad_small.png"
-dest_files=["res://.godot/imported/dpad_small.png-e03df16d3942909ea65b1f91640b5e33.ctex"]
+source_file="res://assets/MobileControls/Sprites/Style D/Default/dpad_small.png"
+dest_files=["res://.godot/imported/dpad_small.png-a83cba78104803da5a654e6050484419.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cud8bv1mbr4eg"
-path="res://.godot/imported/fotograma0002.png-ae11d4f5619eab52e50f564afb2525a9.ctex"
+path="res://.godot/imported/fotograma0002.png-dca87dd0683d7f053da253b2953fb10e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/atack/fotograma0002.png"
-dest_files=["res://.godot/imported/fotograma0002.png-ae11d4f5619eab52e50f564afb2525a9.ctex"]
+source_file="res://assets/atack/fotograma0002.png"
+dest_files=["res://.godot/imported/fotograma0002.png-dca87dd0683d7f053da253b2953fb10e.ctex"]
 
 [params]
 

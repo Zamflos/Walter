@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drcd4rixfv3gb"
-path="res://.godot/imported/icon_fire.svg-856d85ae8b00167d7181e1934ca08eaf.ctex"
+path="res://.godot/imported/icon_fire.svg-2b1bbaba03d041ccecd2315275cb01bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Vector/Icons/icon_fire.svg"
-dest_files=["res://.godot/imported/icon_fire.svg-856d85ae8b00167d7181e1934ca08eaf.ctex"]
+source_file="res://assets/MobileControls/Vector/Icons/icon_fire.svg"
+dest_files=["res://.godot/imported/icon_fire.svg-2b1bbaba03d041ccecd2315275cb01bb.ctex"]
 
 [params]
 

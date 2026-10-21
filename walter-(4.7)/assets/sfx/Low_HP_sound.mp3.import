@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://cvt8uv0hxu0sy"
-path="res://.godot/imported/Low_HP_sound.mp3-a2f9ea36d661a5fdc7cf67e0e782c471.mp3str"
+path="res://.godot/imported/Low_HP_sound.mp3-b8fe19a4640b0dffd5bfe6c20d0ee940.mp3str"
 
 [deps]
 
-source_file="res://Assets/sfx/Low_HP_sound.mp3"
-dest_files=["res://.godot/imported/Low_HP_sound.mp3-a2f9ea36d661a5fdc7cf67e0e782c471.mp3str"]
+source_file="res://assets/sfx/Low_HP_sound.mp3"
+dest_files=["res://.godot/imported/Low_HP_sound.mp3-b8fe19a4640b0dffd5bfe6c20d0ee940.mp3str"]
 
 [params]
 

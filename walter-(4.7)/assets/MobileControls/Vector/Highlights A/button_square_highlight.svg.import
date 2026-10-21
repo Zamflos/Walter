@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bw06soofdrnvq"
-path="res://.godot/imported/button_square_highlight.svg-32f83dc422ee2249ad3b32abb5879546.ctex"
+path="res://.godot/imported/button_square_highlight.svg-e03d1988c27d81787676e9341d0431d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Vector/Highlights A/button_square_highlight.svg"
-dest_files=["res://.godot/imported/button_square_highlight.svg-32f83dc422ee2249ad3b32abb5879546.ctex"]
+source_file="res://assets/MobileControls/Vector/Highlights A/button_square_highlight.svg"
+dest_files=["res://.godot/imported/button_square_highlight.svg-e03d1988c27d81787676e9341d0431d1.ctex"]
 
 [params]
 

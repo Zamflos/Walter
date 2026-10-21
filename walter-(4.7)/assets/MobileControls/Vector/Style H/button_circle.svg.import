@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddqfoa2otgeo"
-path="res://.godot/imported/button_circle.svg-9abfbaaf3756fa530a24b6877a83d44c.ctex"
+path="res://.godot/imported/button_circle.svg-398f8b7ceaefaa1242d3d61d2d79b067.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Vector/Style H/button_circle.svg"
-dest_files=["res://.godot/imported/button_circle.svg-9abfbaaf3756fa530a24b6877a83d44c.ctex"]
+source_file="res://assets/MobileControls/Vector/Style H/button_circle.svg"
+dest_files=["res://.godot/imported/button_circle.svg-398f8b7ceaefaa1242d3d61d2d79b067.ctex"]
 
 [params]
 

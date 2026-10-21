@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vwurm85l0ucp"
-path="res://.godot/imported/icon_pedal.svg-3ea552da2481b420623bf059fa16fe9a.ctex"
+path="res://.godot/imported/icon_pedal.svg-71f19c02bbc185baaebeed9504c09dfb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Vector/Icons/icon_pedal.svg"
-dest_files=["res://.godot/imported/icon_pedal.svg-3ea552da2481b420623bf059fa16fe9a.ctex"]
+source_file="res://assets/MobileControls/Vector/Icons/icon_pedal.svg"
+dest_files=["res://.godot/imported/icon_pedal.svg-71f19c02bbc185baaebeed9504c09dfb.ctex"]
 
 [params]
 

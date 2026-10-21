@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://de1wj1m8c5y2k"
-path="res://.godot/imported/Health _Sound_Effects.mp3-eb6a716ca49035a2d195269c7f2d48c6.mp3str"
+path="res://.godot/imported/Health _Sound_Effects.mp3-51bf5ea8b06e8f1d608c0f426e7a8c29.mp3str"
 
 [deps]
 
-source_file="res://Assets/sfx/Health _Sound_Effects.mp3"
-dest_files=["res://.godot/imported/Health _Sound_Effects.mp3-eb6a716ca49035a2d195269c7f2d48c6.mp3str"]
+source_file="res://assets/sfx/Health _Sound_Effects.mp3"
+dest_files=["res://.godot/imported/Health _Sound_Effects.mp3-51bf5ea8b06e8f1d608c0f426e7a8c29.mp3str"]
 
 [params]
 

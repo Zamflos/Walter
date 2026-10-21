@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dayg41drxtmjo"
-path="res://.godot/imported/dpad_element_west_highlight.png-d6e78c38b891422d40e5653261d5ca7e.ctex"
+path="res://.godot/imported/dpad_element_west_highlight.png-8297bda56a3316fb577b66f73d7a44d0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Sprites/Highlights A/Default/dpad_element_west_highlight.png"
-dest_files=["res://.godot/imported/dpad_element_west_highlight.png-d6e78c38b891422d40e5653261d5ca7e.ctex"]
+source_file="res://assets/MobileControls/Sprites/Highlights A/Default/dpad_element_west_highlight.png"
+dest_files=["res://.godot/imported/dpad_element_west_highlight.png-8297bda56a3316fb577b66f73d7a44d0.ctex"]
 
 [params]
 

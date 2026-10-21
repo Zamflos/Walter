@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://s14lcc65657a"
-path="res://.godot/imported/joystick_hexagon_nub_b.png-8a719b88b633bd8941ec6295222de365.ctex"
+path="res://.godot/imported/joystick_hexagon_nub_b.png-908942afa9171e3a15ef3c813513448e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Sprites/Style E/Default/joystick_hexagon_nub_b.png"
-dest_files=["res://.godot/imported/joystick_hexagon_nub_b.png-8a719b88b633bd8941ec6295222de365.ctex"]
+source_file="res://assets/MobileControls/Sprites/Style E/Default/joystick_hexagon_nub_b.png"
+dest_files=["res://.godot/imported/joystick_hexagon_nub_b.png-908942afa9171e3a15ef3c813513448e.ctex"]
 
 [params]
 

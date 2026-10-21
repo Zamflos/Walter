@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ya7vqrfe5rfm"
-path="res://.godot/imported/highlights-b-large.png-2d28edb170a326e0ff239cb40a686dde.ctex"
+path="res://.godot/imported/highlights-b-large.png-d84fd18d4f931322bd29b40bc79c7639.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Spritesheets/highlights-b-large.png"
-dest_files=["res://.godot/imported/highlights-b-large.png-2d28edb170a326e0ff239cb40a686dde.ctex"]
+source_file="res://assets/MobileControls/Spritesheets/highlights-b-large.png"
+dest_files=["res://.godot/imported/highlights-b-large.png-d84fd18d4f931322bd29b40bc79c7639.ctex"]
 
 [params]
 

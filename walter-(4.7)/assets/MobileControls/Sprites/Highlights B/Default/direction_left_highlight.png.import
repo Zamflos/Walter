@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cia2cl6dovu0s"
-path="res://.godot/imported/direction_left_highlight.png-0db4d0f1119f122b5eaaaa3ef6cf6c1f.ctex"
+path="res://.godot/imported/direction_left_highlight.png-8a4edffc042725c9a8cf15fbf6db0589.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Sprites/Highlights B/Default/direction_left_highlight.png"
-dest_files=["res://.godot/imported/direction_left_highlight.png-0db4d0f1119f122b5eaaaa3ef6cf6c1f.ctex"]
+source_file="res://assets/MobileControls/Sprites/Highlights B/Default/direction_left_highlight.png"
+dest_files=["res://.godot/imported/direction_left_highlight.png-8a4edffc042725c9a8cf15fbf6db0589.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkcqoflb0w4n8"
-path="res://.godot/imported/joystick_polygon_nub_c.svg-9b0f8550f8ace5aaac51c2205c658de8.ctex"
+path="res://.godot/imported/joystick_polygon_nub_c.svg-31ab757395c5e6762735b8aa2b094115.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Vector/Style G/joystick_polygon_nub_c.svg"
-dest_files=["res://.godot/imported/joystick_polygon_nub_c.svg-9b0f8550f8ace5aaac51c2205c658de8.ctex"]
+source_file="res://assets/MobileControls/Vector/Style G/joystick_polygon_nub_c.svg"
+dest_files=["res://.godot/imported/joystick_polygon_nub_c.svg-31ab757395c5e6762735b8aa2b094115.ctex"]
 
 [params]
 

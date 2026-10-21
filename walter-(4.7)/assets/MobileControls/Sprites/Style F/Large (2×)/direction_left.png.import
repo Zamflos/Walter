@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btu6yo6knui4i"
-path="res://.godot/imported/direction_left.png-b6ac091f0b5d746d7f7a0351c24926af.ctex"
+path="res://.godot/imported/direction_left.png-cb97ddcf26d9c9d6c6adcac2b9e68ef8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Sprites/Style F/Large (2×)/direction_left.png"
-dest_files=["res://.godot/imported/direction_left.png-b6ac091f0b5d746d7f7a0351c24926af.ctex"]
+source_file="res://assets/MobileControls/Sprites/Style F/Large (2×)/direction_left.png"
+dest_files=["res://.godot/imported/direction_left.png-cb97ddcf26d9c9d6c6adcac2b9e68ef8.ctex"]
 
 [params]
 

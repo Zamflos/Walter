@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c087xflygo2x5"
-path="res://.godot/imported/icon_shield.png-0c49be3a21017ebbfffc6b357319edcb.ctex"
+path="res://.godot/imported/icon_shield.png-43908f3f785a789e7aa89cb336560eb8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Sprites/Icons/Default/icon_shield.png"
-dest_files=["res://.godot/imported/icon_shield.png-0c49be3a21017ebbfffc6b357319edcb.ctex"]
+source_file="res://assets/MobileControls/Sprites/Icons/Default/icon_shield.png"
+dest_files=["res://.godot/imported/icon_shield.png-43908f3f785a789e7aa89cb336560eb8.ctex"]
 
 [params]
 

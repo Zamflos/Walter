@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7hy4cu3i6rtu"
-path="res://.godot/imported/icon_arrow_curved.png-b4fa0daceb64379e25d08b0f6d32e859.ctex"
+path="res://.godot/imported/icon_arrow_curved.png-167f61db24ed38a33a0667b179970147.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Sprites/Icons/Default/icon_arrow_curved.png"
-dest_files=["res://.godot/imported/icon_arrow_curved.png-b4fa0daceb64379e25d08b0f6d32e859.ctex"]
+source_file="res://assets/MobileControls/Sprites/Icons/Default/icon_arrow_curved.png"
+dest_files=["res://.godot/imported/icon_arrow_curved.png-167f61db24ed38a33a0667b179970147.ctex"]
 
 [params]
 

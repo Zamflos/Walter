@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://cxo1ne2o0spbr"
-path="res://.godot/imported/Harpon_Sound.mp3-be65de8b496216e70d386b4645fd9f09.mp3str"
+path="res://.godot/imported/Harpon_Sound.mp3-7c87ce07a4a7cfc2fe327ca862ce6b99.mp3str"
 
 [deps]
 
-source_file="res://Assets/sfx/Harpon_Sound.mp3"
-dest_files=["res://.godot/imported/Harpon_Sound.mp3-be65de8b496216e70d386b4645fd9f09.mp3str"]
+source_file="res://assets/sfx/Harpon_Sound.mp3"
+dest_files=["res://.godot/imported/Harpon_Sound.mp3-7c87ce07a4a7cfc2fe327ca862ce6b99.mp3str"]
 
 [params]
 

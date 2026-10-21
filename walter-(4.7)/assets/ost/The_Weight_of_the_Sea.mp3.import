@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dojux4y3c6efo"
-path="res://.godot/imported/The_Weight_of_the_Sea.mp3-1d963e755bf2d4f918b4a54362fa2a66.mp3str"
+path="res://.godot/imported/The_Weight_of_the_Sea.mp3-35f6bfc10594542688740ae5ee7f9d22.mp3str"
 
 [deps]
 
-source_file="res://Assets/ost/The_Weight_of_the_Sea.mp3"
-dest_files=["res://.godot/imported/The_Weight_of_the_Sea.mp3-1d963e755bf2d4f918b4a54362fa2a66.mp3str"]
+source_file="res://assets/ost/The_Weight_of_the_Sea.mp3"
+dest_files=["res://.godot/imported/The_Weight_of_the_Sea.mp3-35f6bfc10594542688740ae5ee7f9d22.mp3str"]
 
 [params]
 

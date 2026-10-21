@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccfxe7apj5jar"
-path="res://.godot/imported/dpad_element_south.svg-fb442f91b139ab9c035f78d7d8fdbfe8.ctex"
+path="res://.godot/imported/dpad_element_south.svg-4d781e16e636dec018e07d3828763e9b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Vector/Style F/dpad_element_south.svg"
-dest_files=["res://.godot/imported/dpad_element_south.svg-fb442f91b139ab9c035f78d7d8fdbfe8.ctex"]
+source_file="res://assets/MobileControls/Vector/Style F/dpad_element_south.svg"
+dest_files=["res://.godot/imported/dpad_element_south.svg-4d781e16e636dec018e07d3828763e9b.ctex"]
 
 [params]
 

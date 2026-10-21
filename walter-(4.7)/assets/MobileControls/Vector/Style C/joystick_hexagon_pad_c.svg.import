@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://24c0s0av0feh"
-path="res://.godot/imported/joystick_hexagon_pad_c.svg-a546f41a077476f582a959177b840662.ctex"
+path="res://.godot/imported/joystick_hexagon_pad_c.svg-903cba27a56666ba403e28d90f223b9d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Vector/Style C/joystick_hexagon_pad_c.svg"
-dest_files=["res://.godot/imported/joystick_hexagon_pad_c.svg-a546f41a077476f582a959177b840662.ctex"]
+source_file="res://assets/MobileControls/Vector/Style C/joystick_hexagon_pad_c.svg"
+dest_files=["res://.godot/imported/joystick_hexagon_pad_c.svg-903cba27a56666ba403e28d90f223b9d.ctex"]
 
 [params]
 

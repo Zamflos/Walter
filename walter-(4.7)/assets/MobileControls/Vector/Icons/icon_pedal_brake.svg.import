@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt1lkynirjwea"
-path="res://.godot/imported/icon_pedal_brake.svg-702c500092bbb6aa2edb0cc7187ec7e5.ctex"
+path="res://.godot/imported/icon_pedal_brake.svg-d9b5942d0054f77183783d42c24dffdc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Vector/Icons/icon_pedal_brake.svg"
-dest_files=["res://.godot/imported/icon_pedal_brake.svg-702c500092bbb6aa2edb0cc7187ec7e5.ctex"]
+source_file="res://assets/MobileControls/Vector/Icons/icon_pedal_brake.svg"
+dest_files=["res://.godot/imported/icon_pedal_brake.svg-d9b5942d0054f77183783d42c24dffdc.ctex"]
 
 [params]
 

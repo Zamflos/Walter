@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c41duulsiy5yy"
-path="res://.godot/imported/button_square_wide.png-59480924db41d45060cd4ad50d5d77b6.ctex"
+path="res://.godot/imported/button_square_wide.png-1be6221800d9d81d1d8f7c45cc2c79e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Sprites/Style A/Default/button_square_wide.png"
-dest_files=["res://.godot/imported/button_square_wide.png-59480924db41d45060cd4ad50d5d77b6.ctex"]
+source_file="res://assets/MobileControls/Sprites/Style A/Default/button_square_wide.png"
+dest_files=["res://.godot/imported/button_square_wide.png-1be6221800d9d81d1d8f7c45cc2c79e6.ctex"]
 
 [params]
 

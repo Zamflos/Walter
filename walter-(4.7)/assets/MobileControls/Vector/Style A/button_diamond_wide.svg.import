@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cl8evrvn00ua2"
-path="res://.godot/imported/button_diamond_wide.svg-b3db5399e1d8a19d3079d31ec9792f9c.ctex"
+path="res://.godot/imported/button_diamond_wide.svg-78df58f2580d9e50da88f1832d643383.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Vector/Style A/button_diamond_wide.svg"
-dest_files=["res://.godot/imported/button_diamond_wide.svg-b3db5399e1d8a19d3079d31ec9792f9c.ctex"]
+source_file="res://assets/MobileControls/Vector/Style A/button_diamond_wide.svg"
+dest_files=["res://.godot/imported/button_diamond_wide.svg-78df58f2580d9e50da88f1832d643383.ctex"]
 
 [params]
 

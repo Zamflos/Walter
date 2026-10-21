@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://ux1tr7l55ih1"
-path="res://.godot/imported/Attacking_Claws.mp3-a6c81e0c8ba613c08feaf57b2b9f190e.mp3str"
+path="res://.godot/imported/Attacking_Claws.mp3-53f530807526390a3d3ada8557040658.mp3str"
 
 [deps]
 
-source_file="res://Assets/sfx/Attacking_Claws.mp3"
-dest_files=["res://.godot/imported/Attacking_Claws.mp3-a6c81e0c8ba613c08feaf57b2b9f190e.mp3str"]
+source_file="res://assets/sfx/Attacking_Claws.mp3"
+dest_files=["res://.godot/imported/Attacking_Claws.mp3-53f530807526390a3d3ada8557040658.mp3str"]
 
 [params]
 

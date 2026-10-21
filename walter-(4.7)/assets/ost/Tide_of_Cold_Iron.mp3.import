@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://bc3npn26ctah6"
-path="res://.godot/imported/Tide_of_Cold_Iron.mp3-bbdd1a9600af8a9fce43726f75e8a2ce.mp3str"
+path="res://.godot/imported/Tide_of_Cold_Iron.mp3-a7b416b55d845ff220e6d72483c09f68.mp3str"
 
 [deps]
 
-source_file="res://Assets/ost/Tide_of_Cold_Iron.mp3"
-dest_files=["res://.godot/imported/Tide_of_Cold_Iron.mp3-bbdd1a9600af8a9fce43726f75e8a2ce.mp3str"]
+source_file="res://assets/ost/Tide_of_Cold_Iron.mp3"
+dest_files=["res://.godot/imported/Tide_of_Cold_Iron.mp3-a7b416b55d845ff220e6d72483c09f68.mp3str"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvp38jran0bia"
-path="res://.godot/imported/icon_wrench.svg-04e6814205afba31b5a56c00b953e559.ctex"
+path="res://.godot/imported/icon_wrench.svg-a718c1c796d694d5831571580fe10a71.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Vector/Icons/icon_wrench.svg"
-dest_files=["res://.godot/imported/icon_wrench.svg-04e6814205afba31b5a56c00b953e559.ctex"]
+source_file="res://assets/MobileControls/Vector/Icons/icon_wrench.svg"
+dest_files=["res://.godot/imported/icon_wrench.svg-a718c1c796d694d5831571580fe10a71.ctex"]
 
 [params]
 

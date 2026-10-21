@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crgv1wherhont"
-path="res://.godot/imported/button_circle_wide.png-a2e09b3867ea2bc54fd84855512894e2.ctex"
+path="res://.godot/imported/button_circle_wide.png-422ffd3ccc5a27e4c3a6a0a2a5d1127f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Sprites/Style D/Large (2×)/button_circle_wide.png"
-dest_files=["res://.godot/imported/button_circle_wide.png-a2e09b3867ea2bc54fd84855512894e2.ctex"]
+source_file="res://assets/MobileControls/Sprites/Style D/Large (2×)/button_circle_wide.png"
+dest_files=["res://.godot/imported/button_circle_wide.png-422ffd3ccc5a27e4c3a6a0a2a5d1127f.ctex"]
 
 [params]
 

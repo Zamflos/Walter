@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://cbxertlflox21"
-path="res://.godot/imported/Dashes_Effects.mp3-3f5d561f825d2fa35ca568034e4783b6.mp3str"
+path="res://.godot/imported/Dashes_Effects.mp3-910bd9e44c700c71cf79205de70bb793.mp3str"
 
 [deps]
 
-source_file="res://Assets/sfx/Dashes_Effects.mp3"
-dest_files=["res://.godot/imported/Dashes_Effects.mp3-3f5d561f825d2fa35ca568034e4783b6.mp3str"]
+source_file="res://assets/sfx/Dashes_Effects.mp3"
+dest_files=["res://.godot/imported/Dashes_Effects.mp3-910bd9e44c700c71cf79205de70bb793.mp3str"]
 
 [params]
 

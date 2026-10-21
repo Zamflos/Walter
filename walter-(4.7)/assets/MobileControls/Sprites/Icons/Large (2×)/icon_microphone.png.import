@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btgappi0704km"
-path="res://.godot/imported/icon_microphone.png-06a917c9e6bc03b5d3c61d7d3cb5333d.ctex"
+path="res://.godot/imported/icon_microphone.png-03a432266fd116937df8c5c84b452577.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MobileControls/Sprites/Icons/Large (2×)/icon_microphone.png"
-dest_files=["res://.godot/imported/icon_microphone.png-06a917c9e6bc03b5d3c61d7d3cb5333d.ctex"]
+source_file="res://assets/MobileControls/Sprites/Icons/Large (2×)/icon_microphone.png"
+dest_files=["res://.godot/imported/icon_microphone.png-03a432266fd116937df8c5c84b452577.ctex"]
 
 [params]
 
