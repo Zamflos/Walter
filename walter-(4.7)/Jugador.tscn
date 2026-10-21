@@ -106,6 +106,7 @@ position = Vector2(-53, -57)
 shape = SubResource("CapsuleShape2D_w8kgb")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=281917363]
-limit_smoothed = true
 position_smoothing_enabled = true
+position_smoothing_speed = 2.0
 rotation_smoothing_enabled = true
+rotation_smoothing_speed = 2.0

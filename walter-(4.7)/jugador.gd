@@ -5,8 +5,8 @@ extends CharacterBody2D
 @onready var sprite_standing: AnimatedSprite2D = $animatedstanding
 
 # --- Movimiento ---
-@export var velocidad: float = 200.0
-@export var fuerza_salto: float = -350.0
+@export var velocidad: float = 250.0
+@export var fuerza_salto: float = -450.0
 @export var gravedad: float = 980.0
 
 # --- Dash ---

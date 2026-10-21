@@ -8,9 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://cg7qt4sika6tn" path="res://EnemigoBasico.tscn" id="5_osip8"]
 [ext_resource type="PackedScene" uid="uid://n76u1lkpvlwm" path="res://nivel_01.tscn" id="8_5o5id"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vdcwy"]
-distance = -72.0
-
 [node name="NivelBase" type="Node2D" unique_id=1725350296]
 position = Vector2(3, 58)
 
@@ -32,16 +29,8 @@ offset_right = 2369.0
 offset_bottom = 1319.0
 texture = ExtResource("2_5o5id")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1932515457]
-position = Vector2(565, 164)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1976072026]
-position = Vector2(28, 925)
-shape = SubResource("WorldBoundaryShape2D_vdcwy")
-debug_color = Color(0.063, 0.608, 0.652, 0.42)
-
-[node name="Jugador" parent="StaticBody2D" unique_id=156308201 instance=ExtResource("1_vdcwy")]
-position = Vector2(-360, 793)
+[node name="Jugador" parent="." unique_id=156308201 instance=ExtResource("1_vdcwy")]
+position = Vector2(205, 957)
 
 [node name="ControlesTactiles" parent="." unique_id=1619539230 instance=ExtResource("3_qm8rf")]
 

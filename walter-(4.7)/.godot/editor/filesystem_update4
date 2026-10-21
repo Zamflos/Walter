@@ -1,5 +1,4 @@
 res://NivelBase.tscn
-res://Jugador.tscn
 res://assets/MAPACOLISONS/Mapa_Seccion_08.tscn
-res://nivel_01.tscn
-res://assets/MAPACOLISONS/Mapa_Seccion_05.tscn
+res://Jugador.tscn
+res://jugador.gd
