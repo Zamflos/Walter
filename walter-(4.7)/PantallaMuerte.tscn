@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://da05hd0jkvdqk"]
+
+[ext_resource type="Script" uid="uid://dkjeb1g6xueap" path="res://pantalla_muerte.gd" id="1_7auok"]
+
+[node name="Node2D" type="CanvasLayer" unique_id=606842031]
+process_mode = 3
+script = ExtResource("1_7auok")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1738444069]
+offset_right = 1283.0
+offset_bottom = 719.0
+
+[node name="Panel" type="Panel" parent="." unique_id=415544467]
+offset_left = -6.0
+offset_top = 6.0
+offset_right = 1267.257
+offset_bottom = 741.1328
+rotation = -0.0012162682
+
+[node name="Label" type="Label" parent="Panel" unique_id=484336693]
+layout_mode = 0
+offset_left = 642.73804
+offset_top = 215.7819
+offset_right = 745.73804
+offset_bottom = 238.7819
+text = "HAS MUERTO"
+
+[node name="Label2" type="Label" parent="Panel" unique_id=129104652]
+layout_mode = 0
+offset_left = 319.60687
+offset_top = 323.38895
+offset_right = 504.60687
+offset_bottom = 346.38895
+text = "Se te acabó el oxígeno..."
+
+[node name="Button" type="Button" parent="Panel" unique_id=6717215]
+layout_mode = 0
+offset_left = 405.46454
+offset_top = 440.4935
+offset_right = 920.8097
+offset_bottom = 501.41702
+text = "Reintentar"
+
+[node name="Button2" type="Button" parent="Panel" unique_id=1583086438]
+layout_mode = 0
+offset_left = 367.35266
+offset_top = 532.4472
+offset_right = 952.47003
+offset_bottom = 598.9495
+text = "Salir"
+
+[connection signal="pressed" from="Panel/Button" to="." method="_on_boton_reintentar_pressed"]
+[connection signal="pressed" from="Panel/Button2" to="." method="_on_boton_salir_pressed"]

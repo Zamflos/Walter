@@ -178,4 +178,8 @@ func curar(cantidad: float) -> void:
 	salud_cambiada.emit(salud_actual, tanques_reserva)
 
 func morir() -> void:
-	get_tree().reload_current_scene()
+	# Evitamos que se pueda llamar varias veces
+	set_physics_process(false)
+	
+	var pantalla_muerte = preload("res://PantallaMuerte.tscn").instantiate()
+	get_tree().current_scene.add_child(pantalla_muerte)
