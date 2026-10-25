@@ -12,11 +12,12 @@
 position = Vector2(3, 58)
 
 [node name="Fondo" type="TextureRect" parent="." unique_id=2141650358]
+visible = false
 z_index = -20
-offset_left = -6979.0
-offset_top = -2995.0
-offset_right = 9015.0
-offset_bottom = 4874.0
+offset_left = -4306.0
+offset_top = -1206.0
+offset_right = 2947.0
+offset_bottom = 1809.0
 texture = ExtResource("1_7d3k7")
 expand_mode = 1
 
