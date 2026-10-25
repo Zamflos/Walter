@@ -12,6 +12,7 @@
 position = Vector2(3, 58)
 
 [node name="Fondo" type="TextureRect" parent="." unique_id=2141650358]
+visible = false
 z_index = -20
 offset_left = -4306.0
 offset_top = -1206.0
