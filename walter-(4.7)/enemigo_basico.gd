@@ -9,7 +9,7 @@ var salud_actual: float = 50.0
 @export var distancia_deteccion: float = 350.0
 
 # --- Referencias ---
-@onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var sprite: TextureRect = $Visual
 @onready var area_dano: Area2D = $AreaDano
 
 var jugador: Node2D = null

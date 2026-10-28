@@ -1,22 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://on6koeit374w"]
+[gd_scene format=3 uid="uid://on6koeit374w"]
 
-[ext_resource type="Script" path="res://arpon.gd" id="1_f73kh"]
+[ext_resource type="Script" uid="uid://becfaxb44cxgn" path="res://arpon.gd" id="1_f73kh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f73kh"]
 radius = 8.0
 height = 56.0
 
-[node name="Arpon" type="Area2D"]
+[node name="Arpon" type="Area2D" unique_id=1797089646]
 script = ExtResource("1_f73kh")
 
-[node name="Visual" type="ColorRect" parent="."]
+[node name="Visual" type="ColorRect" parent="." unique_id=1072826702]
 offset_left = -28.0
 offset_top = -5.0
 offset_right = 28.0
 offset_bottom = 5.0
 color = Color(0.95, 0.25, 0.1, 1)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2144354169]
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_f73kh")
 debug_color = Color(1, 0.3, 0.1, 0.5)

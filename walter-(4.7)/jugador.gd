@@ -3,7 +3,8 @@ extends CharacterBody2D
 # --- Referencias a los nodos de animación ---
 @onready var sprite_walk: AnimatedSprite2D = $animatedwalk
 @onready var sprite_standing: AnimatedSprite2D = $animatedstanding
-
+# --- Para disparo ---
+@onready var punto_disparo: Marker2D = $PuntoDisparo
 # --- Movimiento ---
 @export var velocidad: float = 250.0
 @export var fuerza_salto: float = -450.0
@@ -103,6 +104,8 @@ func actualizaranimacion(dir: float) -> void:
 		# Ajusta la orientación de ambos para no perder la dirección al frenar
 		sprite_walk.flip_h = dir < 0
 		sprite_standing.flip_h = dir < 0
+		punto_disparo.position.x = abs(punto_disparo.position.x) * (-1 if dir < 0 else 1)
+		
 	else:
 		# Personaje estático / detenido
 		sprite_walk.visible = false
@@ -131,26 +134,23 @@ func ejecutar_dash(dir: float) -> void:
 	await get_tree().create_timer(recarga_dash).timeout
 	puede_hacer_dash = true
 func atacar() -> void:
-	# Flash visual rápido
-	modulate = Color(1.5, 1.5, 1.5)
-	await get_tree().create_timer(0.07).timeout
-	modulate = Color(1, 1, 1)
-	
 	if arpon_scene == null:
 		push_warning("No se ha asignado la escena del arpón (arpon_scene)")
 		return
-	
+
 	var arpon = arpon_scene.instantiate()
-	arpon.global_position = global_position
-	
-	# Determinar dirección según la orientación del personaje
-	var dir_x = -1 if sprite_walk.flip_h else 1
-	arpon.direccion = Vector2(dir_x, 0)
-	
+	arpon.direccion = (get_global_mouse_position() - punto_disparo.global_position).normalized()
+	arpon.global_position = punto_disparo.global_position
 	get_parent().add_child(arpon)
-	
-	# Recuperar bilis al atacar
+	var mira_izq = get_global_mouse_position().x < global_position.x
+	sprite_walk.flip_h = mira_izq
+	sprite_standing.flip_h = mira_izq
 	recuperar_bilis(ganancia_bilis_por_golpe)
+
+	# Flash visual rápido (al final, para que no estorbe)
+	modulate = Color(1.5, 1.5, 1.5)
+	await get_tree().create_timer(0.07).timeout
+	modulate = Color(1, 1, 1)
 
 func recuperar_bilis(cantidad: float) -> void:
 	bilis_actual = clamp(bilis_actual + cantidad, 0.0, bilis_maxima)
@@ -178,8 +178,4 @@ func curar(cantidad: float) -> void:
 	salud_cambiada.emit(salud_actual, tanques_reserva)
 
 func morir() -> void:
-	# Evitamos que se pueda llamar varias veces
-	set_physics_process(false)
-	
-	var pantalla_muerte = preload("res://PantallaMuerte.tscn").instantiate()
-	get_tree().current_scene.add_child(pantalla_muerte)
+	get_tree().reload_current_scene()

@@ -7,19 +7,15 @@ var direccion: Vector2 = Vector2.RIGHT
 @export var dano: float = 20.0
 @export var tiempo_de_vida: float = 1.5   # segundos hasta que desaparece solo
 
-@onready var sprite: Sprite2D = $Sprite2D   # Cambia el nombre si tu nodo se llama diferente
+@onready var sprite: ColorRect = $Visual  # Cambia el nombre si tu nodo se llama diferente
 @onready var collision: CollisionShape2D = $CollisionShape2D
 
 func _ready() -> void:
-	# Rotar el sprite según la dirección
-	if direccion.x < 0:
-		scale.x = -1   # Voltear horizontalmente si va a la izquierda
+	rotation = direccion.angle()   # gira el arpón hacia donde va
 	
-	# Conectar la señal de colisión
 	body_entered.connect(_on_body_entered)
 	area_entered.connect(_on_area_entered)
 	
-	# Destruirse automáticamente después de un tiempo
 	await get_tree().create_timer(tiempo_de_vida).timeout
 	queue_free()
 

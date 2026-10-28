@@ -110,3 +110,6 @@ position_smoothing_enabled = true
 position_smoothing_speed = 2.0
 rotation_smoothing_enabled = true
 rotation_smoothing_speed = 2.0
+
+[node name="PuntoDisparo" type="Marker2D" parent="." unique_id=610640153]
+position = Vector2(-1, -108)

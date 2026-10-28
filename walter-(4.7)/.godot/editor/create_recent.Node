@@ -1,5 +1,6 @@
+Marker2D
 Button
+VBoxContainer
 Label
-Panel
 ColorRect
-CanvasLayer
+TextureRect
