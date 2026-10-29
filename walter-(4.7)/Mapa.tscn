@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://d0lagqgtmx7nj"]
 
 [ext_resource type="Texture2D" uid="uid://7i6q1sfqac71" path="res://assets/TitleSetMapa/Mossy Assets/Mossy Tileset/Mossy - BackgroundDecoration.png" id="1_lbiw5"]
-[ext_resource type="Texture2D" uid="uid://dh8pa3jm0wb8a" path="res://assets/TitleSetMapa/Mossy Assets/Mossy Tileset/Mossy - FloatingPlatforms.png" id="2_rml5n"]
 [ext_resource type="Texture2D" uid="uid://coveq0dyk25kp" path="res://assets/TitleSetMapa/Mossy Assets/Mossy Tileset/Mossy - MossyHills.png" id="3_udyo2"]
 [ext_resource type="Texture2D" uid="uid://clmw01ktmq3e" path="res://assets/TitleSetMapa/Mossy Assets/Mossy Tileset/Mossy - TileSet.png" id="4_spsvo"]
 
@@ -73,26 +72,6 @@ texture_region_size = Vector2i(512, 512)
 7:4/0 = 0
 7:5/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a5oks"]
-texture = ExtResource("2_rml5n")
-texture_region_size = Vector2i(512, 512)
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-0:2/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-3:2/0 = 0
-0:3/0 = 0
-1:3/0 = 0
-2:3/0 = 0
-3:3/0 = 0
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ifyfn"]
 texture = ExtResource("3_udyo2")
 texture_region_size = Vector2i(512, 512)
@@ -117,42 +96,68 @@ texture_region_size = Vector2i(512, 512)
 texture = ExtResource("4_spsvo")
 texture_region_size = Vector2i(512, 512)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-153.6, -153.6, -153.6, 256, 256, 256, 256, -153.6)
 1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -153.6, -256, 256, 256, 256, 256, -153.6)
 2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(153.6, -153.6, -256, -153.6, -256, 256, 153.6, 256)
 3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-153.6, -153.6, 153.6, -153.6, 153.6, 256, -153.6, 256)
 4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(187.73337, 256, 187.73337, 221.8667, 221.8667, 187.73337, 256, 153.60004, 256, -256, -256, -256, -256, 256)
 5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-153.59999, 256, -153.59999, 221.8667, -187.73334, 153.60004, -256, 153.60004, -256, -256, 256, -256, 256, 256)
 6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, 256, -256, -153.59999, -153.59999, -256, 153.60004, -256, 221.8667, -221.86667, 256, -119.46666, 256, 221.8667, 256, 256)
 0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-156.65872, -256, -157.85123, 256, 256, 256, 256, -256)
 1:1/0 = 0
 2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, -256, 256, 153.6, 256, 153.6, -256)
 3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-153.6, -256, 153.6, -256, 153.6, 256, -153.6, 256)
 4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(187.73337, -256, 187.73337, -221.8667, 221.8667, -187.73337, 256, -153.60004, 256, 256, -256, 256, -256, -256)
 5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-153.59999, -256, -187.73334, -221.86667, -221.8667, -187.73337, -256, -153.60004, -256, 256, 256, 256, 256, -256)
 6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -153.59999, -187.73334, -187.73334, -187.73334, -187.73334, -153.59999, -256, 256, -256, 256, 256, -153.59999, 256, -153.59999, 187.73337, -187.73334, 153.60004, -256, 153.60004)
 0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-102.399994, 102.399994, -153.6, -256, 256, -256, 256, 102.399994)
 1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, -256, 102.399994, 256, 102.399994, 256, -256)
 2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(102.399994, 102.399994, 153.6, -256, -256, -256, -256, 102.399994)
 3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-153.6, 0, -102.399994, 102.399994, -51.199997, 153.6, 51.200012, 153.6, 102.399994, 102.399994, 153.6, 0, 153.6, -256, -153.6, -256)
 4:2/0 = 0
 5:2/0 = 0
 6:2/0 = 0
 0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(51.200012, -153.6, 256, -153.6, 256, 153.6, 102.399994, 102.399994, 51.200012, 0)
 1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(51.200012, -153.6, 256, -153.6, 256, 153.6, -256, 153.6, -256, -153.6)
 2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-51.200012, -153.6, -256, -153.6, -256, 153.6, -102.399994, 102.399994, -51.200012, 0)
 3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-187.73334, -153.59999, 187.73337, -153.59999, 187.73337, 85.33334, 119.466675, 119.466675, 0, 153.6, -119.46666, 119.466675, -187.73334, 85.33334)
 4:3/0 = 0
 5:3/0 = 0
 6:3/0 = 0
 0:4/0 = 0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-153.59999, -256, -153.59999, 256, 187.73337, 256, 187.73337, 187.73337, 256, 153.60004, 256, -256)
 1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(153.59999, -256, 153.59999, 256, -153.59999, 256, -187.73334, 153.60004, -256, 153.60004, -256, -256)
 2:4/0 = 0
 3:4/0 = 0
 4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-153.59999, -256, -153.59999, 256, 187.73337, 256, 256, 153.60004, 256, -256)
 5:4/0 = 0
 6:4/0 = 0
 0:5/0 = 0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-153.59999, 256, -153.59999, -256, 187.73337, -256, 187.73337, -187.73334, 256, -153.60004, 256, 256)
 1:5/0 = 0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(153.59999, 256, 153.59999, -256, -153.59999, -256, -187.73334, -187.73334, -256, -153.60004, -256, 256)
 2:5/0 = 0
 3:5/0 = 0
 4:5/0 = 0
@@ -168,8 +173,8 @@ texture_region_size = Vector2i(512, 512)
 
 [sub_resource type="TileSet" id="TileSet_3db83"]
 tile_size = Vector2i(512, 512)
+physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_qgw4m")
-sources/2 = SubResource("TileSetAtlasSource_a5oks")
 sources/4 = SubResource("TileSetAtlasSource_ifyfn")
 sources/5 = SubResource("TileSetAtlasSource_exdis")
 

@@ -84,6 +84,13 @@ interactuar={
 
 pointing/emulate_touch_from_mouse=true
 
+[layer_names]
+
+2d_physics/layer_1="Personaje"
+2d_physics/layer_2="Enemigos"
+2d_physics/layer_3="Fondo"
+2d_physics/layer_4="Mapa"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
