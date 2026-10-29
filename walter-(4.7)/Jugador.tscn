@@ -78,23 +78,23 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w8kgb"]
-radius = 39.0
-height = 126.0
+radius = 59.0
+height = 202.0
 
 [node name="Jugador" type="CharacterBody2D" unique_id=208515783 groups=["jugadores"]]
 script = ExtResource("1_43k7d")
 arpon_scene = ExtResource("2_defnh")
 
 [node name="animatedwalk" type="AnimatedSprite2D" parent="." unique_id=1208393555]
-position = Vector2(-43, -72.99999)
-scale = Vector2(0.20671983, 0.21591116)
+position = Vector2(-39.4816, -82.63709)
+scale = Vector2(0.30632117, 0.32741937)
 sprite_frames = SubResource("SpriteFrames_7ksya")
 animation = &"walk"
 offset = Vector2(5, 5)
 
 [node name="animatedstanding" type="AnimatedSprite2D" parent="." unique_id=1191710843]
-position = Vector2(-45, -68)
-scale = Vector2(0.19378358, 0.20699704)
+position = Vector2(-45, -73)
+scale = Vector2(0.3, 0.32)
 sprite_frames = SubResource("SpriteFrames_48d6w")
 animation = &"standing"
 frame = 5
@@ -102,10 +102,13 @@ frame_progress = 0.42498785
 offset = Vector2(5, 5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1587166060]
-position = Vector2(-53, -57)
+position = Vector2(-59, -55)
 shape = SubResource("CapsuleShape2D_w8kgb")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=281917363]
+position = Vector2(209, -322)
+zoom = Vector2(0.52, 0.52)
+limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 2.0
 rotation_smoothing_enabled = true

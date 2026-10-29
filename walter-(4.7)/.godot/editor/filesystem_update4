@@ -1,1 +1,9 @@
+<<<<<<< Updated upstream
 res://Main_menu.tscn
+=======
+res://ControlesTactiles.tscn
+res://Jugador.tscn
+res://NivelBase.tscn
+res://Mapa.tscn
+res://EnemigoBasico.tscn
+>>>>>>> Stashed changes

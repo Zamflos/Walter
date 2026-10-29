@@ -1,4 +1,10 @@
+<<<<<<< Updated upstream
 Marker2D
+=======
+Sprite2D
+TileMapLayer
+TileMap
+>>>>>>> Stashed changes
 Button
 VBoxContainer
 Label
