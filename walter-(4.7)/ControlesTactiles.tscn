@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://ctwno0je22hx7"]
 
-<<<<<<< Updated upstream
 [sub_resource type="CanvasTexture" id="CanvasTexture_vwbiy"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_t6bk2"]
@@ -26,69 +25,3 @@ position = Vector2(913, 462)
 scale = Vector2(-63.29271, 43.1424)
 texture_normal = SubResource("CanvasTexture_qfjwj")
 action = "saltar"
-=======
-[ext_resource type="Texture2D" uid="uid://3isedt6mev08" path="res://assets/MobileControls/Sprites/Style A/Default/direction_left.png" id="1_qfjwj"]
-[ext_resource type="Texture2D" uid="uid://udylrlhfkdxl" path="res://assets/MobileControls/Sprites/Style A/Default/direction_right.png" id="2_1ijkt"]
-[ext_resource type="Texture2D" uid="uid://2dlq2mnr7bo2" path="res://assets/MobileControls/Sprites/Style A/Default/button_diamond.png" id="3_7tinr"]
-[ext_resource type="Texture2D" uid="uid://cctv6tdphlm01" path="res://assets/MobileControls/Sprites/Icons/Default/icon_jump.png" id="3_pkcqe"]
-[ext_resource type="Texture2D" uid="uid://dhx2o54hkpnq4" path="res://assets/MobileControls/Sprites/Style A/Default/button_hexagon.png" id="4_v7lop"]
-[ext_resource type="Texture2D" uid="uid://g288r5d661ps" path="res://assets/MobileControls/Sprites/Style A/Default/button_circle.png" id="5_pkcqe"]
-[ext_resource type="Texture2D" uid="uid://cksgtsdgxd6ke" path="res://assets/MobileControls/Vector/Icons/icon_sword.svg" id="7_ndfji"]
-
-[node name="Node2D" type="CanvasLayer" unique_id=848969688]
-
-[node name="left2" type="TouchScreenButton" parent="." unique_id=1280130446]
-position = Vector2(112, 614.5721)
-scale = Vector2(1.4687495, -1.2500008)
-texture_normal = ExtResource("1_qfjwj")
-action = "mover_izquierda"
-
-[node name="right" type="TouchScreenButton" parent="." unique_id=629406248]
-position = Vector2(292, 615.8721)
-rotation = 3.1415927
-scale = Vector2(-1.5291251, 1.2991881)
-texture_normal = ExtResource("2_1ijkt")
-action = "mover_derecha"
-
-[node name="up" type="TouchScreenButton" parent="." unique_id=1510395752]
-position = Vector2(290, 543.5721)
-rotation = 1.5707964
-scale = Vector2(-1.3995637, 1.2991916)
-texture_normal = ExtResource("2_1ijkt")
-action = "saltar"
-
-[node name="dash" type="TouchScreenButton" parent="." unique_id=1941805033]
-position = Vector2(964, 572)
-rotation = -1.5707964
-scale = Vector2(-1.7122161, 1.8187687)
-texture_normal = ExtResource("3_pkcqe")
-action = "dash"
-
-[node name="inventario" type="TouchScreenButton" parent="." unique_id=1133884561]
-position = Vector2(1171, 506.00003)
-rotation = 1.5707964
-scale = Vector2(-1.5572926, 1.596302)
-texture_normal = ExtResource("3_7tinr")
-action = "inventario"
-
-[node name="interactuar" type="TouchScreenButton" parent="." unique_id=668588969]
-position = Vector2(1063, 549.00006)
-rotation = 1.5707964
-scale = Vector2(-1.3143796, 1.3795211)
-texture_normal = ExtResource("4_v7lop")
-action = "interactuar"
-
-[node name="curar" type="TouchScreenButton" parent="." unique_id=1986008880]
-position = Vector2(1268.0001, 521)
-rotation = 1.5707964
-scale = Vector2(-1.2967035, 1.2914906)
-texture_normal = ExtResource("5_pkcqe")
-action = "curar"
-
-[node name="atacar" type="TouchScreenButton" parent="." unique_id=1989477243]
-position = Vector2(1114, 553)
-rotation = -1.5707964
-scale = Vector2(-2.3097892, 2.428754)
-texture_normal = ExtResource("7_ndfji")
-action = "atacar"
->>>>>>> Stashed changes
