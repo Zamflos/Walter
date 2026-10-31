@@ -1,2 +1,15 @@
-res://assets/MAPACOLISONS/Mapa_Seccion_08.tscn
 res://Mapa.tscn
+res://nivel_01.tscn
+res://NivelBase.tscn
+res://assets/MAPACOLISONS/Mapa_Seccion_03.tscn
+res://assets/MAPACOLISONS/Mapa_Seccion_01.tscn
+res://assets/MAPACOLISONS/Mapa_Seccion_04.tscn
+res://assets/MAPACOLISONS/Mapa_Seccion_07.tscn
+res://assets/MAPACOLISONS/Mapa_Seccion_02.tscn
+res://assets/MAPACOLISONS/Mapa_Seccion_05.tscn
+res://assets/MAPACOLISONS/Mapa_Seccion_08.tscn
+res://assets/MAPACOLISONS/Mapa_Seccion_06.tscn
+res://assets/MAPACOLISONS/Mapa_Seccion_09.tscn
+res://Jugador.tscn
+res://ControlesTactiles.tscn
+res://jugador.gd

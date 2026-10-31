@@ -36,6 +36,8 @@ position = Vector2(2034.0001, -117)
 
 [node name="StaticBody2D8" parent="." unique_id=2114902333 instance=ExtResource("9_d0fb8")]
 position = Vector2(2034.0001, 391)
+collision_layer = 128
+collision_mask = 128
 
 [node name="StaticBody2D9" parent="." unique_id=281337734 instance=ExtResource("10_381gw")]
 position = Vector2(2037.0001, 896.00006)
