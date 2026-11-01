@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://coveq0dyk25kp" path="res://assets/TitleSetMapa/Mossy Assets/Mossy Tileset/Mossy - MossyHills.png" id="3_udyo2"]
 [ext_resource type="Texture2D" uid="uid://c366yexb0hln1" path="res://assets/TitleSetMapa/Mossy Assets/Mossy Tileset/Mossy - Decorations&Hazards.png" id="4_rml5n"]
 [ext_resource type="Texture2D" uid="uid://clmw01ktmq3e" path="res://assets/TitleSetMapa/Mossy Assets/Mossy Tileset/Mossy - TileSet.png" id="4_spsvo"]
+[ext_resource type="Script" uid="uid://cbpahefgnk1jx" path="res://area_2_damage.gd" id="5_spsvo"]
 [ext_resource type="Texture2D" uid="uid://4gd3vvb64hpo" path="res://assets/TitleSetMapa/Plant Animations/Plant Animations/Plant 8 Poison/PlantPosion_00029-0.png" id="5_udyo2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qgw4m"]
@@ -175,7 +176,8 @@ texture_region_size = Vector2i(512, 512)
 
 [sub_resource type="TileSet" id="TileSet_3db83"]
 tile_size = Vector2i(512, 512)
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 8
+physics_layer_0/collision_mask = 0
 sources/0 = SubResource("TileSetAtlasSource_qgw4m")
 sources/5 = SubResource("TileSetAtlasSource_exdis")
 
@@ -214,7 +216,8 @@ texture_region_size = Vector2i(512, 512)
 
 [sub_resource type="TileSet" id="TileSet_il2ri"]
 tile_size = Vector2i(512, 512)
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 8
+physics_layer_0/collision_mask = 0
 sources/2 = SubResource("TileSetAtlasSource_udyo2")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_spsvo"]
@@ -446,6 +449,8 @@ tile_map_data = PackedByteArray("AAACAPz/AgAAAAAAAAA=")
 tile_set = SubResource("TileSet_il2ri")
 
 [node name="Espinas" type="StaticBody2D" parent="." unique_id=1431700146]
+collision_layer = 8
+collision_mask = 0
 
 [node name="Espinas" type="Sprite2D" parent="Espinas" unique_id=1343694645]
 z_index = -1
@@ -461,10 +466,12 @@ visible = false
 polygon = PackedVector2Array(-13, 42, -105, -1571, -36, -1484, 102, -1732, 93, -1422, 231, -1566, 179, -1393, 304, -1360, 465, -1451, 336, -1268, 368, -1238, 463, -1245, 380, -1172, 606, -1147, 426, -1084, 437, -1016, 753, -892, 571, -886, 524, -920, 477, -913, 284, -717, 178, -502, 34, 5, 1151, 51, 1025, -268, 1076, -242, 1122, -482, 1187, -212, 1292, -473, 1292, -192, 1416, -303, 1352, -142, 1462, -110, 1586, -266, 1499, -381, 1370, -399, 1536, -468, 1329, -551, 1485, -542, 1481, -652, 1655, -638, 1637, -574, 1798, -574, 1614, -500, 1600, -431, 1752, -427, 1623, -385, 1747, -298, 1853, -464, 1798, -243, 1912, -335, 1866, -229, 2046, -238, 1935, -128, 2004, -110, 1935, -87, 2142, -32, 1995, -18, 1949, 92)
 
 [node name="Area2Damage" type="Area2D" parent="Espinas" unique_id=1692541811]
+collision_layer = 24
+collision_mask = 3
+script = ExtResource("5_spsvo")
 
 [node name="EspinasDamage" type="CollisionPolygon2D" parent="Espinas/Area2Damage" unique_id=486617326]
-visible = false
-polygon = PackedVector2Array(-13, 42, -105, -1571, -36, -1484, 102, -1732, 93, -1422, 231, -1566, 179, -1393, 304, -1360, 465, -1451, 336, -1268, 368, -1238, 463, -1245, 380, -1172, 606, -1147, 426, -1084, 437, -1016, 753, -892, 571, -886, 524, -920, 477, -913, 284, -717, 178, -502, 34, 5, 1151, 51, 1025, -268, 1076, -242, 1122, -482, 1187, -212, 1292, -473, 1292, -192, 1416, -303, 1352, -142, 1462, -110, 1586, -266, 1499, -381, 1370, -399, 1536, -468, 1329, -551, 1485, -542, 1481, -652, 1655, -638, 1637, -574, 1798, -574, 1614, -500, 1600, -431, 1752, -427, 1623, -385, 1747, -298, 1853, -464, 1798, -243, 1912, -335, 1866, -229, 2046, -238, 1935, -128, 2004, -110, 1935, -87, 2142, -32, 1995, -18, 1949, 92)
+polygon = PackedVector2Array(-13, 42, -105, -1571, -36, -1484, 117, -1780, 93, -1422, 261, -1608, 207, -1403, 301, -1384, 513, -1500, 336, -1268, 368, -1238, 499, -1271, 380, -1172, 655, -1151, 426, -1084, 437, -1016, 815, -880, 571, -886, 524, -920, 477, -913, 284, -717, 178, -502, 34, 5, 1151, 51, 1025, -268, 1076, -242, 1110, -502, 1187, -212, 1292, -473, 1292, -192, 1440, -311, 1352, -142, 1462, -110, 1586, -266, 1499, -381, 1370, -399, 1504, -469, 1327, -571, 1485, -542, 1481, -652, 1655, -638, 1637, -574, 1798, -574, 1633, -502, 1636, -448, 1752, -427, 1623, -385, 1747, -298, 1853, -464, 1798, -243, 1928, -349, 1866, -229, 2046, -243, 1935, -128, 2004, -110, 1935, -87, 2112, -57, 1995, -18, 1949, 92)
 
 [node name="Espinas2" type="Sprite2D" parent="Espinas" unique_id=1032116530]
 z_index = -1
@@ -485,6 +492,7 @@ region_enabled = true
 region_rect = Rect2(2304, 1856, 704, 448)
 
 [node name="Piedra" type="StaticBody2D" parent="." unique_id=1122609687]
+collision_layer = 11
 
 [node name="SpritePiedra" type="Sprite2D" parent="Piedra" unique_id=2110475379]
 z_index = -1

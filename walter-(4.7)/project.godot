@@ -88,14 +88,19 @@ pointing/emulate_touch_from_mouse=true
 
 2d_physics/layer_1="Personaje"
 2d_physics/layer_2="Enemigos"
-2d_physics/layer_3="Fondo"
+2d_physics/layer_3="Ataque jugador"
 2d_physics/layer_4="Mapa"
+2d_physics/layer_5="Ataques enemigos"
+2d_physics/layer_6="DañoMapa"
 
 [physics]
 
 3d/physics_engine="Jolt Physics"
+common/physics_interpolation=true
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=2
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="mobile"
+textures/default_filters/anisotropic_filtering_level=4

@@ -8,6 +8,8 @@ radius = 16.0
 height = 48.0
 
 [node name="EnemigoBasico" type="CharacterBody2D" unique_id=871177997 groups=["enemigos"]]
+collision_layer = 2
+collision_mask = 8
 script = ExtResource("1_66cme")
 
 [node name="Visual" type="TextureRect" parent="." unique_id=2051010175]
@@ -24,6 +26,7 @@ shape = SubResource("CapsuleShape2D_2quo8")
 debug_color = Color(1, 0.2, 0.2, 0.45)
 
 [node name="AreaDano" type="Area2D" parent="." unique_id=387738277]
+collision_layer = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AreaDano" unique_id=1536930101]
 position = Vector2(0, -4)

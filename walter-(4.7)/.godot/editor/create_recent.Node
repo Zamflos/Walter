@@ -1,5 +1,6 @@
 AnimatedSprite2D
 Sprite2D
+Line2D
 Node2D
 Area2D
 CollisionPolygon2D
@@ -11,5 +12,3 @@ Marker2D
 Button
 VBoxContainer
 Label
-ColorRect
-TextureRect

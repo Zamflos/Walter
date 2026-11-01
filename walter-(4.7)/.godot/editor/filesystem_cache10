@@ -1,32 +1,34 @@
 78098b89c88a74ebe8c20117b8754620
 ::res://::1793296515
 arpon.gd::GDScript::2671609609655526645::1793296536::0::1::::<>Area2D<><>0<>0<><>::
-Arpon.tscn::PackedScene::1011381548346171776::1793296536::0::1::::<><><>0<>0<><>::uid://becfaxb44cxgn::::res://arpon.gd
+Arpon.tscn::PackedScene::1011381548346171776::1793554958::0::1::::<><><>0<>0<><>::uid://becfaxb44cxgn::::res://arpon.gd
 Caja.tscn::PackedScene::5839213890920498897::1793296536::0::1::::<><><>0<>0<><>::
-ControlesTactiles.tscn::PackedScene::6152661356324651282::1793296562::0::1::::<><><>0<>0<><>::
-EnemigoBasico.tscn::PackedScene::5261041470673282607::1793296562::0::1::::<><><>0<>0<><>::uid://bhk1nvlyal2ab::::res://enemigo_basico.gd<>uid://tptu8gaxrp3v::::res://assets/fotograma0000.png
+ControlesTactiles.tscn::PackedScene::6152661356324651282::1793481984::0::1::::<><><>0<>0<><>::
+EnemigoBasico.tscn::PackedScene::5261041470673282607::1793554754::0::1::::<><><>0<>0<><>::uid://bhk1nvlyal2ab::::res://enemigo_basico.gd<>uid://tptu8gaxrp3v::::res://assets/fotograma0000.png
 enemigo_basico.gd::GDScript::2899989344906732549::1793296544::0::1::::<>CharacterBody2D<><>0<>0<><>::
+gancho.gd::GDScript::7937550743825645619::1793550244::0::1::::<>Node2D<><>0<>0<><>::
 HUB.tscn::PackedScene::953851384045966294::1793296536::0::1::::<><><>0<>0<><>::uid://dxv65j6gk1yke::::res://UI.gd<>uid://dxlbb2lymc7e::::res://tanqueOxigeno.png<>uid://824koiufkned::::res://tanqueOxigenoDañado.png
 icon.svg::CompressedTexture2D::3161182676264362580::1793296544::1793296678::1::::<><><>0<>0<>4f60c12a35325030e88ae06b8c62740a<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-jugador.gd::GDScript::7394633444291048265::1793296544::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Jugador.tscn::PackedScene::4402130053145438630::1793296562::0::1::::<><><>0<>0<><>::uid://ddmasdry2j2xx::::res://jugador.gd<>uid://on6koeit374w::::res://Arpon.tscn<>uid://tptu8gaxrp3v::::res://assets/fotograma0000.png<>uid://cbimmslbtlkce::::res://assets/fotograma0001.png<>uid://crf0qh8quxe7b::::res://assets/fotograma0002.png<>uid://b5f02fckgo0j0::::res://assets/fotograma0003.png<>uid://jurob3ci5cf8::::res://assets/fotograma0004.png<>uid://ollfmaox1sde::::res://assets/fotograma0005.png<>uid://cjwkd7m60he02::::res://assets/player_stading/fotograma0000 (1).png<>uid://o7hgign5dco7::::res://assets/player_stading/fotograma0001.png<>uid://dmmexu7f52tt7::::res://assets/player_stading/fotograma0002.png<>uid://bh75v1pwpdnow::::res://assets/player_stading/fotograma0003.png<>uid://5keryicqaea5::::res://assets/player_stading/fotograma0004.png<>uid://d3d6hbum1a5io::::res://assets/player_stading/fotograma0005.png
+jugador.gd::GDScript::7394633444291048265::1793557516::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Jugador.tscn::PackedScene::4402130053145438630::1793557516::0::1::::<><><>0<>0<><>::uid://ddmasdry2j2xx::::res://jugador.gd<>uid://on6koeit374w::::res://Arpon.tscn<>uid://tptu8gaxrp3v::::res://assets/fotograma0000.png<>uid://cbimmslbtlkce::::res://assets/fotograma0001.png<>uid://crf0qh8quxe7b::::res://assets/fotograma0002.png<>uid://b5f02fckgo0j0::::res://assets/fotograma0003.png<>uid://jurob3ci5cf8::::res://assets/fotograma0004.png<>uid://ollfmaox1sde::::res://assets/fotograma0005.png<>uid://cjwkd7m60he02::::res://assets/player_stading/fotograma0000 (1).png<>uid://o7hgign5dco7::::res://assets/player_stading/fotograma0001.png<>uid://dmmexu7f52tt7::::res://assets/player_stading/fotograma0002.png<>uid://bh75v1pwpdnow::::res://assets/player_stading/fotograma0003.png<>uid://5keryicqaea5::::res://assets/player_stading/fotograma0004.png<>uid://d3d6hbum1a5io::::res://assets/player_stading/fotograma0005.png<>uid://dldakia4qyef0::::res://gancho.gd<>uid://csrphiccjq51a::::res://assets/atack/Arpon/arpon.png
 main_menu.gd::GDScript::8257447944358907762::1793296544::0::1::::<>Control<><>0<>0<><>::
 Main_menu.tscn::PackedScene::2156175245327303499::1793296536::0::1::::<><><>0<>0<><>::uid://dpv77xfuw5piw::::res://main_menu.gd
-Mapa.tscn::PackedScene::8936702862610879003::1793298974::0::1::::<><><>0<>0<><>::uid://7i6q1sfqac71::::res://assets/TitleSetMapa/Mossy Assets/Mossy Tileset/Mossy - BackgroundDecoration.png<>uid://coveq0dyk25kp::::res://assets/TitleSetMapa/Mossy Assets/Mossy Tileset/Mossy - MossyHills.png<>uid://clmw01ktmq3e::::res://assets/TitleSetMapa/Mossy Assets/Mossy Tileset/Mossy - TileSet.png
-NivelBase.tscn::PackedScene::1962268799856687874::1793296562::0::1::::<><><>0<>0<><>::uid://bfwysmhuhs3j7::::res://assets/fondozzz/FONDO.png<>uid://b3yoo6jhxskgs::::res://Jugador.tscn<>uid://bxryl280125hb::::res://assets/imagenes/suelo.jpg<>uid://ctwno0je22hx7::::res://ControlesTactiles.tscn<>uid://nub17vswsmje::::res://HUB.tscn<>uid://cg7qt4sika6tn::::res://EnemigoBasico.tscn<>uid://n76u1lkpvlwm::::res://nivel_01.tscn
-nivel_01.tscn::PackedScene::980434381153382588::1793296544::0::1::::<><><>0<>0<><>::uid://c3gg747725de3::::res://assets/MAPACOLISONS/Mapa_Seccion_01.tscn<>uid://b657rgma6x4lw::::res://assets/MAPACOLISONS/Mapa_Seccion_02.tscn<>uid://bksc7f8mejjl5::::res://assets/MAPACOLISONS/Mapa_Seccion_03.tscn<>uid://deqjc6at6i5iu::::res://assets/MAPACOLISONS/Mapa_Seccion_04.tscn<>uid://6tbupng8v6fo::::res://assets/MAPACOLISONS/Mapa_Seccion_05.tscn<>uid://didq547vbkufi::::res://assets/MAPACOLISONS/Mapa_Seccion_06.tscn<>uid://bf1wamvytw0jw::::res://assets/MAPACOLISONS/Mapa_Seccion_07.tscn<>uid://c5jjr0bty188b::::res://assets/MAPACOLISONS/Mapa_Seccion_08.tscn<>uid://bgubcvucp10nt::::res://assets/MAPACOLISONS/Mapa_Seccion_09.tscn
+Mapa.tscn::PackedScene::8936702862610879003::1793555900::0::1::::<><><>0<>0<><>::uid://7i6q1sfqac71::::res://assets/TitleSetMapa/Mossy Assets/Mossy Tileset/Mossy - BackgroundDecoration.png<>uid://coveq0dyk25kp::::res://assets/TitleSetMapa/Mossy Assets/Mossy Tileset/Mossy - MossyHills.png<>uid://c366yexb0hln1::::res://assets/TitleSetMapa/Mossy Assets/Mossy Tileset/Mossy - Decorations&Hazards.png<>uid://clmw01ktmq3e::::res://assets/TitleSetMapa/Mossy Assets/Mossy Tileset/Mossy - TileSet.png<>uid://cbpahefgnk1jx::::res://area_2_damage.gd<>uid://4gd3vvb64hpo::::res://assets/TitleSetMapa/Plant Animations/Plant Animations/Plant 8 Poison/PlantPosion_00029-0.png
+NivelBase.tscn::PackedScene::1962268799856687874::1793555246::0::1::::<><><>0<>0<><>::uid://bfwysmhuhs3j7::::res://assets/fondozzz/FONDO.png<>uid://b3yoo6jhxskgs::::res://Jugador.tscn<>uid://bxryl280125hb::::res://assets/imagenes/suelo.jpg<>uid://ctwno0je22hx7::::res://ControlesTactiles.tscn<>uid://nub17vswsmje::::res://HUB.tscn<>uid://cg7qt4sika6tn::::res://EnemigoBasico.tscn<>uid://n76u1lkpvlwm::::res://nivel_01.tscn<>uid://d0lagqgtmx7nj::::res://Mapa.tscn
+nivel_01.tscn::PackedScene::980434381153382588::1793479674::0::1::::<><><>0<>0<><>::uid://c3gg747725de3::::res://assets/MAPACOLISONS/Mapa_Seccion_01.tscn<>uid://b657rgma6x4lw::::res://assets/MAPACOLISONS/Mapa_Seccion_02.tscn<>uid://bksc7f8mejjl5::::res://assets/MAPACOLISONS/Mapa_Seccion_03.tscn<>uid://deqjc6at6i5iu::::res://assets/MAPACOLISONS/Mapa_Seccion_04.tscn<>uid://6tbupng8v6fo::::res://assets/MAPACOLISONS/Mapa_Seccion_05.tscn<>uid://didq547vbkufi::::res://assets/MAPACOLISONS/Mapa_Seccion_06.tscn<>uid://bf1wamvytw0jw::::res://assets/MAPACOLISONS/Mapa_Seccion_07.tscn<>uid://c5jjr0bty188b::::res://assets/MAPACOLISONS/Mapa_Seccion_08.tscn<>uid://bgubcvucp10nt::::res://assets/MAPACOLISONS/Mapa_Seccion_09.tscn
 PantallaMuerte.tscn::PackedScene::7212705701884398174::1793296536::0::1::::<><><>0<>0<><>::uid://dkjeb1g6xueap::::res://pantalla_muerte.gd
 pantalla_muerte.gd::GDScript::7879975917327090575::1793296544::0::1::::<>CanvasLayer<><>0<>0<><>::
+area_2_damage.gd::GDScript::4874008596000296401::1793555900::0::1::::<>Area2D<><>0<>0<><>::
 tanqueOxigeno.png::CompressedTexture2D::258716986737214156::1793296544::1793296680::1::::<><><>0<>0<>c998fec988fe18029492c6343842ab71<>res://.godot/imported/tanqueOxigeno.png-c08a71fbec2612071aef0f56b190edb6.ctex::
 tanqueOxigenoDañado.png::CompressedTexture2D::2373749438745094751::1793296544::1793296680::1::::<><><>0<>0<>84f0767a302c2267c963876875a35fac<>res://.godot/imported/tanqueOxigenoDañado.png-9501d4a0140cc9db80f151ddd518eeec.ctex::
 UI.gd::GDScript::8818893709068324648::1793296536::0::1::::<>CanvasLayer<><>0<>0<><>::
 ::res://assets/::1793296534
-fotograma0000.png::CompressedTexture2D::1365744776744976129::1793296542::1793296678::1::::<><><>0<>0<>e3355ff20b7fad002558fe7778f21fb4<>res://.godot/imported/fotograma0000.png-bfc4222fa3fad8cfe5c267ea5068dce4.ctex::
-fotograma0001.png::CompressedTexture2D::4860296228981189976::1793296542::1793296678::1::::<><><>0<>0<>a87ea87117955d2a731155bc9f999156<>res://.godot/imported/fotograma0001.png-77c317705062a765485d253b5a4beac7.ctex::
-fotograma0002.png::CompressedTexture2D::5977920514921291401::1793296542::1793296678::1::::<><><>0<>0<>86cfbf6b873dcee90b7ec3712d6c18a9<>res://.godot/imported/fotograma0002.png-e9973b85e3dcaaa61ca3807a33bd8246.ctex::
-fotograma0003.png::CompressedTexture2D::4503974289028276543::1793296542::1793296678::1::::<><><>0<>0<>1ea1c073836b936e29f307e965cc79a1<>res://.godot/imported/fotograma0003.png-48097235c6a0f4bb082639c32b10d23c.ctex::
-fotograma0004.png::CompressedTexture2D::674044433695802371::1793296542::1793296678::1::::<><><>0<>0<>4ea595f382eaba229cddbb9d92eb5df0<>res://.godot/imported/fotograma0004.png-fa4327b631f49fb89e292b6a4bcde119.ctex::
-fotograma0005.png::CompressedTexture2D::1006029413065142706::1793296542::1793296678::1::::<><><>0<>0<>ca9753ec8b754932f5427729b8f9f7c4<>res://.godot/imported/fotograma0005.png-73163240cf4fb9e51163dab695c1a18d.ctex::
+fotograma0000.png::CompressedTexture2D::1365744776744976129::1793296542::1793558198::1::::<><><>0<>0<>b3664a6f91d736b6f12f7e230bfa08cd<>res://.godot/imported/fotograma0000.png-bfc4222fa3fad8cfe5c267ea5068dce4.ctex::
+fotograma0001.png::CompressedTexture2D::4860296228981189976::1793296542::1793558198::1::::<><><>0<>0<>66970a3d0e83479068ac6791bd1acdc8<>res://.godot/imported/fotograma0001.png-77c317705062a765485d253b5a4beac7.ctex::
+fotograma0002.png::CompressedTexture2D::5977920514921291401::1793296542::1793558198::1::::<><><>0<>0<>ed2eb3ec6fbf3ca4c86f667428d47d10<>res://.godot/imported/fotograma0002.png-e9973b85e3dcaaa61ca3807a33bd8246.ctex::
+fotograma0003.png::CompressedTexture2D::4503974289028276543::1793296542::1793558198::1::::<><><>0<>0<>0c67a410e484e5692a84d362488b967a<>res://.godot/imported/fotograma0003.png-48097235c6a0f4bb082639c32b10d23c.ctex::
+fotograma0004.png::CompressedTexture2D::674044433695802371::1793296542::1793558198::1::::<><><>0<>0<>ddffd36dba07b5e50679271e0301a740<>res://.godot/imported/fotograma0004.png-fa4327b631f49fb89e292b6a4bcde119.ctex::
+fotograma0005.png::CompressedTexture2D::1006029413065142706::1793296542::1793558198::1::::<><><>0<>0<>cdafe877da24f17c8099acd83f81b7fb<>res://.godot/imported/fotograma0005.png-73163240cf4fb9e51163dab695c1a18d.ctex::
 ::res://assets/Assets/::1793296534
 ::res://assets/Assets/fondodecoracion-split/::1793296534
 ::res://assets/Assets/fondodecoracion-split/imageonline/::1793296534
@@ -40,8 +42,10 @@ fotograma0005.png::CompressedTexture2D::1006029413065142706::1793296542::1793296
 21.png::CompressedTexture2D::1902491612911970511::1793296536::1793296722::1::::<><><>0<>0<>d055ab0f11ff1cae209294d07c81541f<>res://.godot/imported/21.png-f4e01bd6c4da86a260d999adc8e081c0.ctex::
 22.png::CompressedTexture2D::7642683682087453435::1793296536::1793296720::1::::<><><>0<>0<>0930b3747209c3002da61f44fd73fc28<>res://.godot/imported/22.png-b80a9f11300c6be725d0c6cdeef45976.ctex::
 ::res://assets/atack/::1793296541
-ataque.png::CompressedTexture2D::757636617362478785::1793296542::1793296716::1::::<><><>0<>0<>eb0a27d2992f89e8b3ca82cd759af2a8<>res://.godot/imported/ataque.png-f64e8651bfab6df8e886d83b6180e939.ctex::
+ataque.png::CompressedTexture2D::757636617362478785::1793487452::1793487710::1::::<><><>0<>0<>eb0a27d2992f89e8b3ca82cd759af2a8<>res://.godot/imported/ataque.png-f64e8651bfab6df8e886d83b6180e939.ctex::
 hoja de atquenormal.png::CompressedTexture2D::7719538389449697994::1793296542::1793296542::1::::<><><>0<>0<>57dd6da7baa368de6ea40959a069738c<>res://.godot/imported/hoja de atquenormal.png-78ac1e2bfdbda119600107ff23166703.ctex::
+::res://assets/atack/Arpon/::1793551097
+arpon.png::CompressedTexture2D::6072258653518604732::1793552674::1793552744::1::::<><><>0<>0<>3e0161ba88acd74d7ededb4303fc3ac7<>res://.godot/imported/arpon.png-217f3b5a0cb750f1c79355fff69240f8.ctex::
 ::res://assets/boss1Assets/::1793296541
 boss_IDLE.png::CompressedTexture2D::3843374815364285980::1793296542::1793296718::1::::<><><>0<>0<>00cc69f0f0b9c9fbdafe007add4bf675<>res://.godot/imported/boss_IDLE.png-829e78b8fb543fcc2b86d79f339ac730.ctex::
 moveBossAsset.png::CompressedTexture2D::7454263550653840490::1793296542::1793296718::1::::<><><>0<>0<>255424a314e78f9d9a76ae017f392620<>res://.godot/imported/moveBossAsset.png-e18e9e44a371542bca470a80ae4d3806.ctex::
@@ -60,15 +64,15 @@ tanqueOxigenoDañado.png::CompressedTexture2D::8982794440254972647::1793296536::
 fondo.jpg::CompressedTexture2D::1090407466769133158::1793296542::1793296716::1::::<><><>0<>0<>781563a796e368fcc85b77fc04e40c50<>res://.godot/imported/fondo.jpg-995947d57d9b74acfa98d72f5d50f66d.ctex::
 suelo.jpg::CompressedTexture2D::4037336831026937151::1793296542::1793296716::1::::<><><>0<>0<>0c8b0777335dc58dd5a1c0a2dd2a42c5<>res://.godot/imported/suelo.jpg-b2577e6d55055905f101203bb960a2a7.ctex::
 ::res://assets/MAPACOLISONS/::1793296534
-Mapa_Seccion_01.tscn::PackedScene::6750938277239115856::1793296536::0::1::::<><><>0<>0<><>::uid://hm31m667oscb::::res://Assets/fondodecoracion-split/imageonline/00.png
-Mapa_Seccion_02.tscn::PackedScene::4626179805078926504::1793296536::0::1::::<><><>0<>0<><>::uid://b1jqc0d4dvgfv::::res://Assets/fondodecoracion-split/imageonline/01.png
-Mapa_Seccion_03.tscn::PackedScene::3125646813183221888::1793296536::0::1::::<><><>0<>0<><>::uid://bcyc8j01xkv3v::::res://Assets/fondodecoracion-split/imageonline/02.png
-Mapa_Seccion_04.tscn::PackedScene::7473599123348000428::1793296536::0::1::::<><><>0<>0<><>::uid://5kx3yxx8hcc6::::res://Assets/fondodecoracion-split/imageonline/10.png
-Mapa_Seccion_05.tscn::PackedScene::2215174571227286636::1793296536::0::1::::<><><>0<>0<><>::uid://bakaq5bmwnkvc::::res://assets/Assets/fondodecoracion-split/imageonline/11.png
-Mapa_Seccion_06.tscn::PackedScene::7727992552713943938::1793296536::0::1::::<><><>0<>0<><>::uid://b2jagi0n8yi35::::res://Assets/fondodecoracion-split/imageonline/12.png
-Mapa_Seccion_07.tscn::PackedScene::2792375161167508300::1793296536::0::1::::<><><>0<>0<><>::uid://b7f68q2igxyqm::::res://Assets/fondodecoracion-split/imageonline/20.png
-Mapa_Seccion_08.tscn::PackedScene::6897664203269957335::1793296778::0::1::::<><><>0<>0<><>::uid://2dt02kc7pi8v::::res://assets/Assets/fondodecoracion-split/imageonline/21.png
-Mapa_Seccion_09.tscn::PackedScene::2848906723181475633::1793296536::0::1::::<><><>0<>0<><>::uid://dg5f5bql221ud::::res://Assets/fondodecoracion-split/imageonline/22.png
+Mapa_Seccion_01.tscn::PackedScene::6750938277239115856::1793479680::0::1::::<><><>0<>0<><>::uid://hm31m667oscb::::res://assets/Assets/fondodecoracion-split/imageonline/00.png
+Mapa_Seccion_02.tscn::PackedScene::4626179805078926504::1793479728::0::1::::<><><>0<>0<><>::uid://b1jqc0d4dvgfv::::res://assets/Assets/fondodecoracion-split/imageonline/01.png
+Mapa_Seccion_03.tscn::PackedScene::3125646813183221888::1793479668::0::1::::<><><>0<>0<><>::uid://bcyc8j01xkv3v::::res://assets/Assets/fondodecoracion-split/imageonline/02.png
+Mapa_Seccion_04.tscn::PackedScene::7473599123348000428::1793479692::0::1::::<><><>0<>0<><>::uid://5kx3yxx8hcc6::::res://assets/Assets/fondodecoracion-split/imageonline/10.png
+Mapa_Seccion_05.tscn::PackedScene::2215174571227286636::1793479740::0::1::::<><><>0<>0<><>::uid://bakaq5bmwnkvc::::res://assets/Assets/fondodecoracion-split/imageonline/11.png
+Mapa_Seccion_06.tscn::PackedScene::7727992552713943938::1793479798::0::1::::<><><>0<>0<><>::uid://b2jagi0n8yi35::::res://assets/Assets/fondodecoracion-split/imageonline/12.png
+Mapa_Seccion_07.tscn::PackedScene::2792375161167508300::1793479714::0::1::::<><><>0<>0<><>::uid://b7f68q2igxyqm::::res://assets/Assets/fondodecoracion-split/imageonline/20.png
+Mapa_Seccion_08.tscn::PackedScene::6897664203269957335::1793479748::0::1::::<><><>0<>0<><>::uid://2dt02kc7pi8v::::res://assets/Assets/fondodecoracion-split/imageonline/21.png
+Mapa_Seccion_09.tscn::PackedScene::2848906723181475633::1793479808::0::1::::<><><>0<>0<><>::uid://dg5f5bql221ud::::res://assets/Assets/fondodecoracion-split/imageonline/22.png
 ::res://assets/MobileControls/::1793296534
 License.txt::TextFile::-1::1793296536::0::1::::<><><>0<>0<><>::
 Preview.png::CompressedTexture2D::7842710296864762::1793296536::1793296648::1::::<><><>0<>0<>bab681078b3981f2807507c1ab3a0994<>res://.godot/imported/Preview.png-bca64c1c0d1fe383a32792a771cfe540.ctex::
@@ -1564,12 +1568,12 @@ fotograma0005.png::CompressedTexture2D::5072858030104370915::1793296544::1793296
 fotograma0006.png::CompressedTexture2D::597767776057763472::1793296544::1793296648::1::::<><><>0<>0<>93a3765313dca39ab19d6df652dd96e3<>res://.godot/imported/fotograma0006.png-62283e5c0617d556f13114f947a573d1.ctex::
 fotograma0007.png::CompressedTexture2D::8147303274281120157::1793296544::1793296646::1::::<><><>0<>0<>72fe7b298dfd13825f16166ba0177bb2<>res://.godot/imported/fotograma0007.png-d17d685f9353e42131cbc9cd2104fb04.ctex::
 ::res://assets/player_stading/::1793296542
-fotograma0000 (1).png::CompressedTexture2D::5450571498754232741::1793296544::1793296646::1::::<><><>0<>0<>d8e893794898ac033d464067badb48ed<>res://.godot/imported/fotograma0000 (1).png-8fbff6e68ddd517adbaf63b83cbcc209.ctex::
-fotograma0001.png::CompressedTexture2D::1049140062861659804::1793296544::1793296646::1::::<><><>0<>0<>6dae1e747a57f1059d341c4d8c3ff397<>res://.godot/imported/fotograma0001.png-5f1be56ab0bfb153c9c6edf6bc8da60c.ctex::
-fotograma0002.png::CompressedTexture2D::8026585749184382794::1793296544::1793296646::1::::<><><>0<>0<>294a8fdb3f1b1b5ce6c00fe8e31ca28a<>res://.godot/imported/fotograma0002.png-f59985cdb93584663fef4cf07b59eb15.ctex::
-fotograma0003.png::CompressedTexture2D::2945663078543165102::1793296544::1793296646::1::::<><><>0<>0<>2d3f477efb279475a857da0c75cdff2e<>res://.godot/imported/fotograma0003.png-ba5abb06a07a60137c8c0077236a2624.ctex::
-fotograma0004.png::CompressedTexture2D::2126583586180114030::1793296544::1793296646::1::::<><><>0<>0<>f7fff0df7a8192b9d30b7a763136ce24<>res://.godot/imported/fotograma0004.png-a2cafe38488aeb38b64752afdba06891.ctex::
-fotograma0005.png::CompressedTexture2D::9132637617538927158::1793296544::1793296646::1::::<><><>0<>0<>9c2a9796c15b1bfbbab3bc5fe99fbf61<>res://.godot/imported/fotograma0005.png-6e510d0f19373c9b38d509e61596b65c.ctex::
+fotograma0000 (1).png::CompressedTexture2D::5450571498754232741::1793296544::1793558174::1::::<><><>0<>0<>507a0f444e811d55bb0bd094363718dc<>res://.godot/imported/fotograma0000 (1).png-8fbff6e68ddd517adbaf63b83cbcc209.ctex::
+fotograma0001.png::CompressedTexture2D::1049140062861659804::1793296544::1793558174::1::::<><><>0<>0<>2b33d4b0746634ab1407d04410eb5a60<>res://.godot/imported/fotograma0001.png-5f1be56ab0bfb153c9c6edf6bc8da60c.ctex::
+fotograma0002.png::CompressedTexture2D::8026585749184382794::1793296544::1793558174::1::::<><><>0<>0<>bd4b9a7e6833fd7608deb79e99255d4b<>res://.godot/imported/fotograma0002.png-f59985cdb93584663fef4cf07b59eb15.ctex::
+fotograma0003.png::CompressedTexture2D::2945663078543165102::1793296544::1793558174::1::::<><><>0<>0<>5dbf946ec29f0165159480d1403bdac6<>res://.godot/imported/fotograma0003.png-ba5abb06a07a60137c8c0077236a2624.ctex::
+fotograma0004.png::CompressedTexture2D::2126583586180114030::1793296544::1793558174::1::::<><><>0<>0<>76c529bb8d13d20a3b469371841b601b<>res://.godot/imported/fotograma0004.png-a2cafe38488aeb38b64752afdba06891.ctex::
+fotograma0005.png::CompressedTexture2D::9132637617538927158::1793296544::1793558174::1::::<><><>0<>0<>4456a968c8109c3e8d45cf8cf098b1e3<>res://.godot/imported/fotograma0005.png-6e510d0f19373c9b38d509e61596b65c.ctex::
 StandingPlayer (1)-0.png::CompressedTexture2D::7691063484066040819::1793334558::1793475812::1::::<><><>0<>0<>2c4b93d7ecc8728e9b10ec4cfa031005<>res://.godot/imported/StandingPlayer (1)-0.png-e364897b05b92a30cfc1ff90494dc1a8.ctex::
 ::res://assets/Running/::1793296538
 fotograma0000-0.png::CompressedTexture2D::4219660467224910649::1793336100::1793475812::1::::<><><>0<>0<>fd4672231203091c72b450fdb576b2f8<>res://.godot/imported/fotograma0000-0.png-d8f895801c5124263cd51aa9d414f894.ctex::

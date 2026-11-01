@@ -31,24 +31,26 @@ offset_bottom = 1319.0
 texture = ExtResource("2_5o5id")
 
 [node name="Jugador" parent="." unique_id=156308201 instance=ExtResource("1_vdcwy")]
-position = Vector2(5691, 3154)
-scale = Vector2(2, 2)
-velocidad = 500.0
+position = Vector2(5557, 3076)
+scale = Vector2(2.34, 2.34)
 
 [node name="ControlesTactiles" parent="." unique_id=1619539230 instance=ExtResource("3_qm8rf")]
 
 [node name="HUB" parent="." unique_id=1434394209 instance=ExtResource("4_f3834")]
 
 [node name="Enemigo1" parent="." unique_id=572441692 instance=ExtResource("5_osip8")]
-position = Vector2(545, 939)
+position = Vector2(7424, 4226)
+scale = Vector2(3, 3)
 
 [node name="Enemigo2" parent="." unique_id=1990752748 instance=ExtResource("5_osip8")]
-position = Vector2(399, 934)
+position = Vector2(6872, 2680)
+scale = Vector2(3, 3)
 
 [node name="Nivel_01" parent="." unique_id=918656854 instance=ExtResource("8_5o5id")]
+visible = false
 z_index = -2
 position = Vector2(-34834, -16843)
 scale = Vector2(20, 20)
 
-[node name="Node2D" parent="." unique_id=720613284 instance=ExtResource("8_vjx6r")]
+[node name="Mapa" parent="." unique_id=720613284 instance=ExtResource("8_vjx6r")]
 position = Vector2(4013, 4256)
