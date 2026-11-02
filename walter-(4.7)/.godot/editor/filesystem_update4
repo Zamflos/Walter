@@ -1,8 +1,3 @@
 res://Jugador.tscn
-res://gancho.gd
 res://Mapa.tscn
-res://NivelBase.tscn
 res://jugador.gd
-res://EnemigoBasico.tscn
-res://Arpon.tscn
-res://area_2_damage.gd

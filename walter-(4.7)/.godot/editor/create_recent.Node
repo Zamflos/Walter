@@ -1,5 +1,7 @@
-AnimatedSprite2D
+AnimationTree
 Sprite2D
+AnimationPlayer
+AnimatedSprite2D
 Line2D
 Node2D
 Area2D
@@ -10,5 +12,3 @@ RigidBody2D
 TileMapLayer
 Marker2D
 Button
-VBoxContainer
-Label

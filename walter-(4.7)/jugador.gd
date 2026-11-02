@@ -1,8 +1,13 @@
 extends CharacterBody2D
 
 # --- Referencias a los nodos de animación ---
-@onready var sprite_walk: AnimatedSprite2D = $animatedwalk
-@onready var sprite_standing: AnimatedSprite2D = $animatedstanding
+@onready var sprite: Sprite2D = $Sprite2D
+@onready var arbol: AnimationTree = $AnimationTree
+var estado_anim: AnimationNodeStateMachinePlayback
+var atacando: bool = false
+var id_ataque: int = 0
+@export var recarga_ataque: float = 0.5   # segundos entre un ataque y el siguiente
+var tiempo_recarga_ataque: float = 0.0
 # --- Para disparo ---
 @onready var punto_disparo: Marker2D = $PuntoDisparo
 # --- Gancho (opcional: si no existe el nodo, el juego funciona igual) ---
@@ -109,9 +114,18 @@ func _ready() -> void:
 	configurar_controles()
 	calcular_salto()
 
+	# AnimationTree
+	arbol.active = true
+	estado_anim = arbol.get("parameters/playback")
+	arbol.animation_finished.connect(_on_animacion_terminada)
+
 	salud_actual = salud_maxima
 	salud_cambiada.emit(salud_actual, tanques_reserva)
 	bilis_cambiada.emit(bilis_actual)
+
+func _on_animacion_terminada(anim_name: StringName) -> void:
+	if anim_name == "attack":
+		atacando = false
 
 # Salto con Espacio o W. W va en una acción aparte ("saltar_alterno")
 # para que en el gancho W sirva para subir sin soltarte.
@@ -152,6 +166,8 @@ func _physics_process(delta: float) -> void:
 
 	if tiempo_recarga_dash > 0.0:
 		tiempo_recarga_dash -= delta
+	if tiempo_recarga_ataque > 0.0:
+		tiempo_recarga_ataque -= delta
 
 	# --- Durante el dash: recto en la dirección elegida, sin gravedad ---
 	if esta_haciendo_dash:
@@ -426,23 +442,20 @@ func salto_pared() -> void:
 	contador_coyote = 0.0
 
 func actualizaranimacion(dir: float) -> void:
-	if sprite_walk == null or sprite_standing == null:
+	if estado_anim == null:
 		return
 
-	sprite_walk.flip_h = mirando < 0.0
-	sprite_standing.flip_h = mirando < 0.0
+	# Voltear el sprite
+	sprite.flip_h = mirando < 0.0
 	punto_disparo.position.x = abs(punto_disparo.position.x) * mirando
 
-	if dir != 0.0:
-		sprite_standing.visible = false
-		sprite_standing.stop()
-		sprite_walk.visible = true
-		sprite_walk.play("walk")
-	else:
-		sprite_walk.visible = false
-		sprite_walk.stop()
-		sprite_standing.visible = true
-		sprite_standing.play("standing")
+	# El ataque no se interrumpe hasta que termine
+	if atacando:
+		return
+
+	var nuevo: String = "walk" if dir != 0.0 else "idle"
+	if estado_anim.get_current_node() != nuevo:
+		estado_anim.travel(nuevo)
 
 func ejecutar_dash() -> void:
 	var dir: Vector2 = Input.get_vector("mover_izquierda", "mover_derecha", "mover_arriba", "mover_abajo")
@@ -481,9 +494,12 @@ func terminar_dash() -> void:
 	modulate = Color(1, 1, 1)
 
 func atacar() -> void:
+	if tiempo_recarga_ataque > 0.0:
+		return
 	if arpon_scene == null:
 		push_warning("No se ha asignado la escena del arpón (arpon_scene)")
 		return
+	tiempo_recarga_ataque = recarga_ataque
 
 	var arpon = arpon_scene.instantiate()
 	arpon.direccion = (get_global_mouse_position() - punto_disparo.global_position).normalized()
@@ -492,10 +508,21 @@ func atacar() -> void:
 	mirando = -1.0 if get_global_mouse_position().x < global_position.x else 1.0
 	recuperar_bilis(ganancia_bilis_por_golpe)
 
+	# Animación de ataque (AnimationTree)
+	atacando = true
+	id_ataque += 1
+	var mi_id: int = id_ataque
+	estado_anim.start("attack")
+
 	# Flash visual rápido
 	modulate = Color(1.5, 1.5, 1.5)
 	await get_tree().create_timer(0.07).timeout
 	modulate = Color(1, 1, 1)
+
+	# Red de seguridad: si la animación nunca avisa que terminó, se libera sola
+	await get_tree().create_timer(0.5).timeout
+	if mi_id == id_ataque:
+		atacando = false
 
 func recuperar_bilis(cantidad: float) -> void:
 	bilis_actual = clamp(bilis_actual + cantidad, 0.0, bilis_maxima)
