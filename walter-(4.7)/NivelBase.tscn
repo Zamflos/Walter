@@ -47,7 +47,6 @@ position = Vector2(6872, 2680)
 scale = Vector2(3, 3)
 
 [node name="Nivel_01" parent="." unique_id=918656854 instance=ExtResource("8_5o5id")]
-visible = false
 z_index = -2
 position = Vector2(-34834, -16843)
 scale = Vector2(20, 20)

@@ -1,3 +1,2 @@
-res://Jugador.tscn
 res://Mapa.tscn
-res://jugador.gd
+res://NivelBase.tscn
