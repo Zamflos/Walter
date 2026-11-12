@@ -86,6 +86,9 @@ var bilis_actual: float = 0.0
 # --- Arpón ---
 @export var arpon_scene: PackedScene
 
+# --- Joystick de apuntado (móvil) ---
+var joystick_arpon: Control = null
+
 # --- Valores calculados del salto ---
 var vel_salto: float
 var vel_doble_salto: float
@@ -123,6 +126,19 @@ func _ready() -> void:
 	salud_cambiada.emit(salud_actual, tanques_reserva)
 	bilis_cambiada.emit(bilis_actual)
 
+# Buscar el joystick de apuntado
+	var controles = get_tree().get_first_node_in_group("controles_tactiles")
+	if controles:
+		joystick_arpon = controles.get_node_or_null("JoystickArpon")
+		
+		# Conectar la señal para que al soltar el stick dispare
+		if joystick_arpon and joystick_arpon.has_signal("disparar_arpón"):
+			joystick_arpon.disparar_arpón.connect(_on_joystick_disparar)
+
+func _on_joystick_disparar(dir: Vector2) -> void:
+	# Forzamos el disparo en la dirección del stick
+	_disparar_en_direccion(dir)
+	
 func _on_animacion_terminada(anim_name: StringName) -> void:
 	if anim_name == "attack":
 		atacando = false
@@ -267,7 +283,7 @@ func _physics_process(delta: float) -> void:
 			and (is_on_floor() or en_pared or dash_aereo_disponible):
 		ejecutar_dash()
 
-	# Ataque con Arpón (Clic Izquierdo)
+	# Ataque con Arpón (Clic Izquierdo / botón táctil)
 	if Input.is_action_just_pressed("atacar"):
 		atacar()
 
@@ -499,27 +515,46 @@ func atacar() -> void:
 	if arpon_scene == null:
 		push_warning("No se ha asignado la escena del arpón (arpon_scene)")
 		return
+
+	var dir: Vector2
+
+	# Preferimos el joystick si está apuntando
+	if joystick_arpon and joystick_arpon.is_aiming():
+		dir = joystick_arpon.get_direction().normalized()
+	else:
+		dir = (get_global_mouse_position() - punto_disparo.global_position).normalized()
+
+	if dir == Vector2.ZERO:
+		dir = Vector2(mirando, 0.0)
+
+	_disparar_en_direccion(dir)
+
+func _disparar_en_direccion(dir: Vector2) -> void:
+	if tiempo_recarga_ataque > 0.0:
+		return
+	if arpon_scene == null:
+		return
+
 	tiempo_recarga_ataque = recarga_ataque
 
 	var arpon = arpon_scene.instantiate()
-	arpon.direccion = (get_global_mouse_position() - punto_disparo.global_position).normalized()
+	arpon.direccion = dir
 	arpon.global_position = punto_disparo.global_position
 	get_parent().add_child(arpon)
-	mirando = -1.0 if get_global_mouse_position().x < global_position.x else 1.0
+
+	mirando = -1.0 if dir.x < 0.0 else 1.0
 	recuperar_bilis(ganancia_bilis_por_golpe)
 
-	# Animación de ataque (AnimationTree)
+	# Animación
 	atacando = true
 	id_ataque += 1
 	var mi_id: int = id_ataque
 	estado_anim.start("attack")
 
-	# Flash visual rápido
 	modulate = Color(1.5, 1.5, 1.5)
 	await get_tree().create_timer(0.07).timeout
 	modulate = Color(1, 1, 1)
 
-	# Red de seguridad: si la animación nunca avisa que terminó, se libera sola
 	await get_tree().create_timer(0.5).timeout
 	if mi_id == id_ataque:
 		atacando = false

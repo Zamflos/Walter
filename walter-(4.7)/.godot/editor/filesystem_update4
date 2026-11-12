@@ -1,2 +1,4 @@
-res://Mapa.tscn
-res://NivelBase.tscn
+res://ControlesTactiles.tscn
+res://joystick.gd
+res://jugador.gd
+res://gancho.gd

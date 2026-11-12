@@ -55,7 +55,21 @@ func _physics_process(delta: float) -> void:
 	match estado:
 		Estado.INACTIVO:
 			if Input.is_action_just_pressed("gancho") and tiempo_recarga <= 0.0:
-				lanzar(get_global_mouse_position())
+				var objetivo: Vector2
+
+				# Móvil: usa el joystick de apuntado si está activo
+				if "joystick_arpon" in jugador and jugador.joystick_arpon \
+						and jugador.joystick_arpon.has_method("is_aiming") \
+						and jugador.joystick_arpon.is_aiming():
+					var dir: Vector2 = jugador.joystick_arpon.get_direction().normalized()
+					# Punto lejano en la dirección del joystick
+					objetivo = global_position + dir * 2000.0
+				else:
+					# PC: mouse normal
+					objetivo = get_global_mouse_position()
+
+				lanzar(objetivo)
+
 		Estado.LANZANDO:
 			avanzar_punta(delta)
 		Estado.ENGANCHADO:
