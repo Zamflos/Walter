@@ -1,15 +1,70 @@
 [gd_scene format=3 uid="uid://27sjsgrrsdje"]
 
 [ext_resource type="Texture2D" uid="uid://bfwysmhuhs3j7" path="res://assets/fondozzz/FONDO.png" id="1_7d3k7"]
+[ext_resource type="Shader" uid="uid://8c5tnmi4dpih" path="res://agua_abismo.gdshader" id="1_iwaro"]
 [ext_resource type="PackedScene" uid="uid://b3yoo6jhxskgs" path="res://Jugador.tscn" id="1_vdcwy"]
 [ext_resource type="Texture2D" uid="uid://bxryl280125hb" path="res://assets/imagenes/suelo.jpg" id="2_5o5id"]
+[ext_resource type="Script" uid="uid://dtad08wpob8gy" path="res://filtro_abismo.gd" id="2_iwaro"]
 [ext_resource type="PackedScene" uid="uid://ctwno0je22hx7" path="res://ControlesTactiles.tscn" id="3_qm8rf"]
 [ext_resource type="PackedScene" uid="uid://nub17vswsmje" path="res://HUB.tscn" id="4_f3834"]
+[ext_resource type="PackedScene" uid="uid://blvlq0k6tl81j" path="res://paralax.tscn" id="4_vjx6r"]
 [ext_resource type="PackedScene" uid="uid://cg7qt4sika6tn" path="res://EnemigoBasico.tscn" id="5_osip8"]
 [ext_resource type="PackedScene" uid="uid://n76u1lkpvlwm" path="res://nivel_01.tscn" id="8_5o5id"]
 [ext_resource type="PackedScene" uid="uid://d0lagqgtmx7nj" path="res://Mapa.tscn" id="8_vjx6r"]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iwaro"]
+shader = ExtResource("1_iwaro")
+shader_parameter/fuerza_distorsion = 0.0035
+shader_parameter/escala_corriente = 2.3230000865925
+shader_parameter/velocidad_corriente = 0.0
+shader_parameter/aberracion_cromatica = 0.004
+shader_parameter/profundidad = 0.7230000343425
+shader_parameter/color_sombras = Color(0.01, 0.05, 0.09, 1)
+shader_parameter/color_luces = Color(0.6388693, 1.7379626, 2.1861365, 1)
+shader_parameter/color_niebla = Color(0.02, 0.09, 0.13, 1)
+shader_parameter/brillo = 0.9760000226100001
+shader_parameter/intensidad_tinte = 0.43200002052
+shader_parameter/saturacion = 1.110000052725
+shader_parameter/contraste = 1.05
+shader_parameter/intensidad_niebla = 0.2430000115425
+shader_parameter/color_corrupcion = Color(0.12156863, 0.6862745, 0, 1)
+shader_parameter/nivel_corrupcion = 0.0450000021375
+shader_parameter/velocidad_pulso = 0.4190000199025
+shader_parameter/intensidad_rayos = 1.386000065835
+shader_parameter/intensidad_caustica = 0.2510000119225
+shader_parameter/posicion_jugador = Vector2(0.5, 0.5)
+shader_parameter/radio_luz = 0.65
+shader_parameter/intensidad_luz_jugador = 0.75
+shader_parameter/intensidad_glow = 0.6
+shader_parameter/umbral_glow = 0.45
+shader_parameter/radio_glow = 6.0
+shader_parameter/intensidad_burbujas = 0.342000016245
+shader_parameter/frecuencia_burbujas = 0.12
+shader_parameter/tamano_celda_burbujas = 474.4190177849025
+shader_parameter/oscuridad_base = 0.078000003705
+shader_parameter/oscuridad_profundidad = 0.25
+shader_parameter/vineta = 0.27200001292
+shader_parameter/grano = 0.03
+shader_parameter/offset_camara = Vector2(0, 0)
+shader_parameter/zoom_camara = 1.0
+shader_parameter/tamano_viewport = Vector2(1920, 1080)
+
 [node name="NivelBase" type="Node2D" unique_id=1725350296]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=600447396]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=481860183 node_paths=PackedStringArray("jugador")]
+material = SubResource("ShaderMaterial_iwaro")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("2_iwaro")
+jugador = NodePath("../../Jugador")
+y_superficie = -21737.0
+y_abismo = 6883.0
 
 [node name="Fondo" type="TextureRect" parent="." unique_id=2141650358]
 visible = false
@@ -31,7 +86,7 @@ offset_bottom = 1319.0
 texture = ExtResource("2_5o5id")
 
 [node name="Jugador" parent="." unique_id=156308201 instance=ExtResource("1_vdcwy")]
-position = Vector2(5557, 3076)
+position = Vector2(-34500, -8888)
 scale = Vector2(2.34, 2.34)
 
 [node name="ControlesTactiles" parent="." unique_id=1619539230 instance=ExtResource("3_qm8rf")]
@@ -47,9 +102,13 @@ position = Vector2(6872, 2680)
 scale = Vector2(3, 3)
 
 [node name="Nivel_01" parent="." unique_id=918656854 instance=ExtResource("8_5o5id")]
+visible = false
 z_index = -2
 position = Vector2(-34834, -16843)
 scale = Vector2(20, 20)
 
 [node name="Mapa" parent="." unique_id=720613284 instance=ExtResource("8_vjx6r")]
 position = Vector2(4013, 4256)
+
+[node name="paralax" parent="." unique_id=954895496 instance=ExtResource("4_vjx6r")]
+position = Vector2(1977, -118)

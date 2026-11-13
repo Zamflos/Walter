@@ -7,42 +7,58 @@
 [ext_resource type="Texture2D" uid="uid://cc0u0xx85vxtq" path="res://assets/MobileControls/Sprites/Style A/Default/button_circle_wide.png" id="5_v7lop"]
 
 [node name="Node2D" type="CanvasLayer" unique_id=2127098196]
+layer = 3
 
 [node name="JoystickMovimiento" type="Control" parent="." unique_id=1937278366]
 layout_mode = 3
-anchor_left = 0.079
-anchor_top = 0.772
-anchor_right = 0.2
-anchor_bottom = 0.90800005
-offset_left = -3.1200027
-offset_top = 0.15997314
-offset_right = 0.21685791
-offset_bottom = 0.23999023
+anchor_left = 0.072000004
+anchor_top = 0.73200005
+anchor_right = 0.202
+anchor_bottom = 0.95
+offset_left = -7.1600037
+offset_top = -0.040039063
+offset_right = -0.34313965
+offset_bottom = 4.999939
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.8, 0.8)
 script = ExtResource("1_1ijkt")
+deadzone = 0.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Base" type="TextureRect" parent="JoystickMovimiento" unique_id=1267427722]
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 0.21700001
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -0.011001587
-offset_right = -6.2773743
-offset_bottom = 9.0
+anchor_left = 0.040000003
+anchor_top = 0.012
+anchor_right = 0.98553395
+anchor_bottom = 1.0211319
+offset_left = 0.07132721
+offset_top = 0.05599308
+offset_right = -0.00091552734
+offset_bottom = 0.03302002
+offset_transform_scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_1ijkt")
+metadata/_edit_use_anchors_ = true
 
 [node name="Stick" type="TextureRect" parent="JoystickMovimiento" unique_id=1309431734]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.022000002
-anchor_top = 0.22900002
-anchor_right = 1.0
-anchor_bottom = 1.1450001
-offset_left = 0.051999807
-offset_top = -0.007001877
-offset_right = -2.396637
-offset_bottom = -0.03501129
+anchor_left = 0.162
+anchor_top = 0.142
+anchor_right = 0.8641197
+anchor_bottom = 0.88327503
+offset_left = -0.061130524
+offset_top = -0.003976822
+offset_right = 0.031417847
+offset_bottom = 0.04396057
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.8, 0.8)
 texture = ExtResource("1_qfjwj")
+metadata/_edit_use_anchors_ = true
 
 [node name="JoystickArpon" type="Control" parent="." unique_id=122778359]
 layout_mode = 3
@@ -50,10 +66,12 @@ anchor_left = 0.079
 anchor_top = 0.772
 anchor_right = 0.2
 anchor_bottom = 0.90800005
-offset_left = 960.88
-offset_top = -479.84003
-offset_right = 964.2168
-offset_bottom = -479.76
+offset_left = 1035.88
+offset_top = -116.84003
+offset_right = 981.0
+offset_bottom = -114.76001
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_1ijkt")
 es_movimiento = false
 es_apuntado = true
@@ -61,26 +79,26 @@ es_apuntado = true
 [node name="Base" type="TextureRect" parent="JoystickArpon" unique_id=1983482595]
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 0.21700001
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 9.0
-offset_top = 1.7339993
-offset_right = 2.7225952
-offset_bottom = 10.745003
+anchor_left = 0.11000001
+anchor_top = 0.09
+anchor_right = 0.90700006
+anchor_bottom = 0.91
+offset_left = -4.9591064e-05
+offset_right = 0.048606873
+offset_transform_enabled = true
 texture = ExtResource("2_1ijkt")
 
 [node name="Stick" type="TextureRect" parent="JoystickArpon" unique_id=929917802]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.022000002
-anchor_top = 0.22900002
-anchor_right = 1.0
-anchor_bottom = 1.1450001
-offset_left = 2.5192301
-offset_top = -1.4420013
-offset_right = 0.070617676
-offset_bottom = -1.4700089
+anchor_left = 0.19900002
+anchor_top = 0.261
+anchor_right = 0.83900005
+anchor_bottom = 0.84800005
+offset_left = -0.9000473
+offset_top = -8.100008
+offset_right = -0.9000473
+offset_bottom = -2.8000107
 texture = ExtResource("1_qfjwj")
 
 [node name="Control" type="Control" parent="." unique_id=1660476269]

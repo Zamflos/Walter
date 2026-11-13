@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://blvlq0k6tl81j"]
+
+[ext_resource type="Texture2D" uid="uid://cwhsibpx6jtud" path="res://assets/fondozzz/Ocean2.png" id="1_sqy6e"]
+[ext_resource type="Texture2D" uid="uid://ce3ysunike0ul" path="res://assets/fondozzz/Ocean1.png" id="2_xjj5k"]
+[ext_resource type="Texture2D" uid="uid://3lglbgvpf4bd" path="res://assets/fondozzz/Ocean0.png" id="3_eq4hb"]
+
+[node name="paralax" type="Node2D" unique_id=954895496]
+position = Vector2(2015, 1843)
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=702378304]
+z_index = -2
+texture_filter = 1
+scroll_scale = Vector2(0.4, 0.8)
+repeat_size = Vector2(5120, 0)
+repeat_times = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=91453956]
+modulate = Color(0.42745098, 0.77254903, 0.4862745, 1)
+position = Vector2(-5973.9995, 2618.9998)
+scale = Vector2(5.002929, 8.003107)
+texture = ExtResource("1_sqy6e")
+centered = false
+
+[node name="Parallax2D3" type="Parallax2D" parent="." unique_id=1095039937]
+z_index = -3
+texture_filter = 1
+scroll_scale = Vector2(0.3, 0.05)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3" unique_id=694120992]
+modulate = Color(0.42745098, 0.77254903, 0.4862745, 1)
+position = Vector2(-4136, -835)
+scale = Vector2(12.777493, 15.323077)
+texture = ExtResource("2_xjj5k")
+centered = false
+
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=681822769]
+z_index = -4
+texture_filter = 1
+scroll_scale = Vector2(0.6, 0.1)
+repeat_size = Vector2(2559, 0)
+repeat_times = 9
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2" unique_id=939457451]
+modulate = Color(0.42745098, 0.77254903, 0.4862745, 1)
+texture_filter = 1
+position = Vector2(-2534, -5919)
+scale = Vector2(10, 10)
+texture = ExtResource("3_eq4hb")
+centered = false

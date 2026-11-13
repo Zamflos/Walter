@@ -1,4 +1,10 @@
+res://paralax.tscn
+res://Mapa.tscn
+res://NivelBase.tscn
+res://Jugador.tscn
+res://assets/TitleSetMapa/Mossy Assets/Mossy Tileset/tiles.png
 res://ControlesTactiles.tscn
-res://joystick.gd
-res://jugador.gd
-res://gancho.gd
+res://NivelBase.gdshader
+res://agua_abismo.gdshader
+res://filtro_abismo.gd
+res://rastro_burbujas.gd

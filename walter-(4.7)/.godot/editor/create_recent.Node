@@ -1,7 +1,11 @@
-TextureRect
-Control
+CPUParticles2D
+ColorRect
 CanvasLayer
 Sprite2D
+Parallax2D
+ParallaxLayer
+TextureRect
+Control
 AnimationTree
 AnimationPlayer
 AnimatedSprite2D
@@ -9,6 +13,3 @@ Line2D
 Node2D
 Area2D
 CollisionPolygon2D
-CollisionShape2D
-StaticBody2D
-RigidBody2D
