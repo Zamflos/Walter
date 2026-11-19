@@ -1,3 +1,5 @@
+AnimatedSprite2D
+NinePatchRect
 CPUParticles2D
 ColorRect
 CanvasLayer
@@ -8,8 +10,5 @@ TextureRect
 Control
 AnimationTree
 AnimationPlayer
-AnimatedSprite2D
 Line2D
 Node2D
-Area2D
-CollisionPolygon2D

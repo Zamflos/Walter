@@ -1,2 +1,8 @@
-res://NivelBase.tscn
-res://agua_abismo.gdshader
+res://assets/Player/HUB.tscn
+res://assets/shaders and Efects/agua_abismo.gdshader
+res://assets/Player/HUB.gdshader
+res://assets/Player/diving_helmet_glass_ninepatch.gdshader
+res://assets/Player/HUB2.gdshader
+res://assets/Escenas/UI.gd
+res://assets/Enemigos/EnemigoBasico.tscn
+res://assets/Escenas/NivelBase.tscn
