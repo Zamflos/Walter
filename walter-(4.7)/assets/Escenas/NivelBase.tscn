@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cg7qt4sika6tn" path="res://assets/Enemigos/EnemigoBasico.tscn" id="5_osip8"]
 [ext_resource type="PackedScene" uid="uid://n76u1lkpvlwm" path="res://assets/Escenas/nivel_01.tscn" id="8_5o5id"]
 [ext_resource type="PackedScene" uid="uid://d0lagqgtmx7nj" path="res://assets/Escenas/Mapa.tscn" id="8_vjx6r"]
+[ext_resource type="PackedScene" uid="uid://drs1baj5hq46p" path="res://jefe_1.tscn" id="12_kacag"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_iwaro"]
 shader = ExtResource("1_iwaro")
@@ -104,6 +105,7 @@ scale = Vector2(3, 3)
 motion_mode = 1
 
 [node name="Nivel_01" parent="." unique_id=918656854 instance=ExtResource("8_5o5id")]
+visible = false
 z_index = -2
 position = Vector2(-34834, -16843)
 scale = Vector2(20, 20)
@@ -113,3 +115,8 @@ position = Vector2(4013, 4256)
 
 [node name="paralax" parent="." unique_id=954895496 instance=ExtResource("4_vjx6r")]
 position = Vector2(1977, -118)
+
+[node name="jefe1" parent="." unique_id=1601600065 groups=["enemigos"] instance=ExtResource("12_kacag")]
+z_index = 2
+position = Vector2(-30615, -9301)
+collision_layer = 2
