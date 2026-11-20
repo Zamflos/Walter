@@ -1,9 +1,7 @@
 [gd_scene format=3 uid="uid://27sjsgrrsdje"]
 
-[ext_resource type="Texture2D" uid="uid://bfwysmhuhs3j7" path="res://assets/Assets/fondozzz/FONDO.png" id="1_7d3k7"]
 [ext_resource type="Shader" uid="uid://8c5tnmi4dpih" path="res://assets/shaders and Efects/agua_abismo.gdshader" id="1_iwaro"]
 [ext_resource type="PackedScene" uid="uid://b3yoo6jhxskgs" path="res://assets/Player/Jugador.tscn" id="1_vdcwy"]
-[ext_resource type="Texture2D" uid="uid://bxryl280125hb" path="res://assets/Assets/imagenes/suelo.jpg" id="2_5o5id"]
 [ext_resource type="Script" uid="uid://dtad08wpob8gy" path="res://assets/shaders and Efects/filtro_abismo.gd" id="2_iwaro"]
 [ext_resource type="PackedScene" uid="uid://ctwno0je22hx7" path="res://assets/Escenas/ControlesTactiles.tscn" id="3_qm8rf"]
 [ext_resource type="PackedScene" uid="uid://nub17vswsmje" path="res://assets/Player/HUB.tscn" id="4_f3834"]
@@ -67,25 +65,6 @@ jugador = NodePath("../../Jugador")
 y_superficie = -21737.0
 y_abismo = 6883.0
 
-[node name="Fondo" type="TextureRect" parent="." unique_id=2141650358]
-visible = false
-z_index = -20
-offset_left = -6979.0
-offset_top = -2995.0
-offset_right = 9015.0
-offset_bottom = 4874.0
-texture = ExtResource("1_7d3k7")
-expand_mode = 1
-
-[node name="Suelo" type="TextureRect" parent="." unique_id=546331299]
-visible = false
-z_index = -10
-offset_left = -919.0
-offset_top = 1113.0
-offset_right = 2369.0
-offset_bottom = 1319.0
-texture = ExtResource("2_5o5id")
-
 [node name="Jugador" parent="." unique_id=156308201 instance=ExtResource("1_vdcwy")]
 position = Vector2(-34500, -8888)
 scale = Vector2(2.34, 2.34)
@@ -117,6 +96,4 @@ position = Vector2(4013, 4256)
 position = Vector2(1977, -118)
 
 [node name="jefe1" parent="." unique_id=1601600065 groups=["enemigos"] instance=ExtResource("12_kacag")]
-z_index = 2
-position = Vector2(-30615, -9301)
-collision_layer = 2
+position = Vector2(-37530, -9244)

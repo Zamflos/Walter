@@ -3,7 +3,7 @@ extends CharacterBody2D
 @export_group("Estadísticas")
 @export var vida: float = 200.0
 @export var dano_ataque: float = 20.0
-@export var velocidad: float = 120.0
+@export var velocidad: float = 300.0
 @export var distancia_parada: float = 150.0
 
 # Marca esta casilla en el Inspector si notas que mira al lado contrario al jugador

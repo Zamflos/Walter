@@ -125,7 +125,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"ataque",
-"speed": 6.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -148,7 +148,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"giro",
-"speed": 6.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -194,7 +194,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"mover",
-"speed": 6.0
+"speed": 9.0
 }, {
 "frames": [],
 "loop": 1,
@@ -203,12 +203,13 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_48d6w"]
-size = Vector2(456, 265.5)
+size = Vector2(293.19998, 279.59998)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fyjua"]
 size = Vector2(89.18877, 53.492504)
 
 [node name="jefe1" type="CharacterBody2D" unique_id=1601600065]
+z_index = -1
 collision_layer = 2
 collision_mask = 8
 script = ExtResource("1_ske3j")
@@ -218,9 +219,11 @@ invertir_mirada = true
 scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_7ksya")
 animation = &"ataque"
+frame = 5
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=177486040]
-position = Vector2(4, 26.25)
+position = Vector2(-1.9999771, 40.999947)
 scale = Vector2(5, 5)
 shape = SubResource("RectangleShape2D_48d6w")
 

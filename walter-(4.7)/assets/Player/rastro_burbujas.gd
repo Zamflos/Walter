@@ -25,7 +25,7 @@ func _ready() -> void:
 	lifetime_randomness = 0.6     # unas revientan antes que otras
 
 	emission_shape = CPUParticles2D.EMISSION_SHAPE_SPHERE
-	emission_sphere_radius = 35.0
+	emission_sphere_radius = 70.0
 
 	direction = Vector2.UP
 	spread = 40.0

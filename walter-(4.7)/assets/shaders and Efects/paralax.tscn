@@ -43,7 +43,7 @@ repeat_times = 9
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D2" unique_id=939457451]
 modulate = Color(0.42745098, 0.77254903, 0.4862745, 1)
 texture_filter = 1
-position = Vector2(-2534, -5919)
-scale = Vector2(10, 10)
+position = Vector2(-2703, -5919)
+scale = Vector2(10.660156, 12.388749)
 texture = ExtResource("3_eq4hb")
 centered = false
