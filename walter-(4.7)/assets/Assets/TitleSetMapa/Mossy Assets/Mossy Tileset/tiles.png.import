@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crcx2mxu8yd3g"
-path="res://.godot/imported/tiles.png-b71474c65057d742abb0ee3c426275bd.ctex"
+path.s3tc="res://.godot/imported/tiles.png-b71474c65057d742abb0ee3c426275bd.s3tc.ctex"
+path.etc2="res://.godot/imported/tiles.png-b71474c65057d742abb0ee3c426275bd.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/Assets/TitleSetMapa/Mossy Assets/Mossy Tileset/tiles.png"
-dest_files=["res://.godot/imported/tiles.png-b71474c65057d742abb0ee3c426275bd.ctex"]
+dest_files=["res://.godot/imported/tiles.png-b71474c65057d742abb0ee3c426275bd.s3tc.ctex", "res://.godot/imported/tiles.png-b71474c65057d742abb0ee3c426275bd.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

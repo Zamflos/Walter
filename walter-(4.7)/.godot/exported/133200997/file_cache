@@ -1,0 +1,22 @@
+res://assets/Assets/MAPACOLISONS/Mapa_Seccion_01.tscn::0d14f110ba00003319111d817cf53e8e::1793479680::res://.godot/exported/133200997/export-f0399e3d205089f2fcef51e298d3ea3c-Mapa_Seccion_01.scn
+res://assets/Assets/MAPACOLISONS/Mapa_Seccion_02.tscn::bf744e5a38bccc32572a2e1419b21a3e::1793479728::res://.godot/exported/133200997/export-b63ae130b2f760ac46bc53abd71c2942-Mapa_Seccion_02.scn
+res://assets/Assets/MAPACOLISONS/Mapa_Seccion_03.tscn::67d6bbe45ee435272328fc2c2009f069::1793479668::res://.godot/exported/133200997/export-5bee6e5374c6a1971251081bb7780b5f-Mapa_Seccion_03.scn
+res://assets/Assets/MAPACOLISONS/Mapa_Seccion_04.tscn::b2feacf75e2558de85bc799f9e5b6f79::1793479692::res://.godot/exported/133200997/export-69e522012652cf310dc94b2f855ad8fe-Mapa_Seccion_04.scn
+res://assets/Assets/MAPACOLISONS/Mapa_Seccion_05.tscn::85dfd47bc34aa661b6d5ce066ba76a91::1793479740::res://.godot/exported/133200997/export-8d97a49c51667add84534ce1e637b486-Mapa_Seccion_05.scn
+res://assets/Assets/MAPACOLISONS/Mapa_Seccion_06.tscn::638806c0366f3b372645cc0c631b1b5c::1793479798::res://.godot/exported/133200997/export-90d0c3449e236c5e204b5da25f5f9a14-Mapa_Seccion_06.scn
+res://assets/Assets/MAPACOLISONS/Mapa_Seccion_07.tscn::6c58810a4fe3dd85b19a6c12e08cccd7::1793479714::res://.godot/exported/133200997/export-8a1daa3138752317494d53ae09220afa-Mapa_Seccion_07.scn
+res://assets/Assets/MAPACOLISONS/Mapa_Seccion_08.tscn::81fb882f3899d09755dbf62abfc9180c::1793479748::res://.godot/exported/133200997/export-a7069e2e9dec7929e85a5d64a0cbc6e0-Mapa_Seccion_08.scn
+res://assets/Assets/MAPACOLISONS/Mapa_Seccion_09.tscn::4d6f3c8d449fb1ff8f51e75d87ce05c3::1793479808::res://.godot/exported/133200997/export-efeaba8c3f9aed86463e316e30d686cd-Mapa_Seccion_09.scn
+res://assets/Enemigos/EnemigoBasico.tscn::fec5d1b25c23e1be09198f4d2be4e7c9::1795223612::res://.godot/exported/133200997/export-27e416010fe545798728e184f31d976b-EnemigoBasico.scn
+res://assets/Escenas/Caja.tscn::de07e929c87a6e37d34be9cca1de590f::1795038128::res://.godot/exported/133200997/export-23ce297252ea5f1f46abee0e86bb13cb-Caja.scn
+res://assets/Escenas/ControlesTactiles.tscn::2dc0087a5fbe6b322acdf06d39680ac6::1795041000::res://.godot/exported/133200997/export-44a4df3b3a0a6f60ea2dd1a864b1c60d-ControlesTactiles.scn
+res://assets/Escenas/Main_menu.tscn::62b96116ad120d907e12cad80b5a441b::1795041196::res://.godot/exported/133200997/export-a7a150621477790eea53eb42e22d4b2b-Main_menu.scn
+res://assets/Escenas/Mapa.tscn::61d83d8af96e57a60889d51c16b21398::1795188430::res://.godot/exported/133200997/export-0ab30ebab6b5cb0a9263770653139a08-Mapa.scn
+res://assets/Escenas/NivelBase.tscn::47c71bcbe796fd63a09b19e04745c89e::1795224076::res://.godot/exported/133200997/export-c7523272095505308a6203a6802a151b-NivelBase.scn
+res://assets/Escenas/nivel_01.tscn::9dad1acf3abca60d447be6a26e9b0d5e::1795037778::res://.godot/exported/133200997/export-6847cefd8bd7be81f346efc0328f18ab-nivel_01.scn
+res://assets/Escenas/PantallaMuerte.tscn::a6f7089c875ad061fab812b512d6424b::1795037590::res://.godot/exported/133200997/export-440318a414fe7c970533183d441bb1e8-PantallaMuerte.scn
+res://assets/Player/Arpon.tscn::be88667555553f3f295ec37d5e72f4e7::1795037590::res://.godot/exported/133200997/export-faa41e737ab1cd6254ad01043438cb58-Arpon.scn
+res://assets/Player/HUB.tscn::09cd0ff7ad771c23941354b8b3144a88::1795050048::res://.godot/exported/133200997/export-d7ba275f3fecca64d43cd0c37ddd0cfa-HUB.scn
+res://assets/Player/Jugador.tscn::e7bcdd8c9d3783b2ddf8ab393a26d213::1795224520::res://.godot/exported/133200997/export-5d2ee130dccb93fc1139f7832b1dcc26-Jugador.scn
+res://assets/shaders and Efects/paralax.tscn::5b694ff249c241430b4c0ad2f43ab32e::1795109924::res://.godot/exported/133200997/export-b612e05f156b921bc7788fec57f2a5d9-paralax.scn
+res://jefe_1.tscn::dc364ab892675b75bf5b61926f3526df::1795223660::res://.godot/exported/133200997/export-eed1cc60419689eb4b56998e9bace3db-jefe_1.scn

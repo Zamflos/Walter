@@ -9,156 +9,6 @@
 [ext_resource type="Script" uid="uid://dldakia4qyef0" path="res://assets/Player/gancho.gd" id="15_6b1b7"]
 [ext_resource type="Texture2D" uid="uid://csrphiccjq51a" path="res://assets/Player/atack/Arpon/arpon.png" id="16_qhgme"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2veg3"]
-atlas = ExtResource("3_v1h6a")
-region = Rect2(0, 0, 512, 512)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1rhi5"]
-atlas = ExtResource("3_v1h6a")
-region = Rect2(512, 0, 512, 512)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hixxi"]
-atlas = ExtResource("3_v1h6a")
-region = Rect2(1024, 0, 512, 512)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ie45i"]
-atlas = ExtResource("3_v1h6a")
-region = Rect2(1536, 0, 512, 512)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cedo5"]
-atlas = ExtResource("3_v1h6a")
-region = Rect2(2048, 0, 512, 512)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lp24k"]
-atlas = ExtResource("3_v1h6a")
-region = Rect2(2560, 0, 512, 512)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_il2ri"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2veg3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1rhi5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hixxi")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ie45i")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cedo5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lp24k")
-}],
-"loop": 1,
-"name": &"attack",
-"speed": 12.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rno6r"]
-atlas = ExtResource("3_8vwo7")
-region = Rect2(0, 0, 512, 512)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xsch2"]
-atlas = ExtResource("3_8vwo7")
-region = Rect2(512, 0, 512, 512)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_defnh"]
-atlas = ExtResource("3_8vwo7")
-region = Rect2(1024, 0, 512, 512)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6b1b7"]
-atlas = ExtResource("3_8vwo7")
-region = Rect2(1536, 0, 512, 512)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8nmth"]
-atlas = ExtResource("3_8vwo7")
-region = Rect2(2048, 0, 512, 512)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bs883"]
-atlas = ExtResource("3_8vwo7")
-region = Rect2(2560, 0, 512, 512)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_7ksya"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rno6r")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xsch2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_defnh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6b1b7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8nmth")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bs883")
-}],
-"loop": 1,
-"name": &"walk",
-"speed": 10.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_v1h6a"]
-atlas = ExtResource("4_kg3ks")
-region = Rect2(0, 0, 512, 512)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_g5j21"]
-atlas = ExtResource("4_kg3ks")
-region = Rect2(512, 0, 512, 512)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ikhd1"]
-atlas = ExtResource("4_kg3ks")
-region = Rect2(1024, 0, 512, 512)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_466xc"]
-atlas = ExtResource("4_kg3ks")
-region = Rect2(1536, 0, 512, 512)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8vwo7"]
-atlas = ExtResource("4_kg3ks")
-region = Rect2(2048, 0, 512, 512)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ipfd3"]
-atlas = ExtResource("4_kg3ks")
-region = Rect2(2560, 0, 512, 512)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_48d6w"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_v1h6a")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_g5j21")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ikhd1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_466xc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8vwo7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ipfd3")
-}],
-"loop": 1,
-"name": &"Standing",
-"speed": 5.0
-}]
-
 [sub_resource type="Animation" id="Animation_stdwn"]
 length = 0.001
 tracks/0/type = "value"
@@ -400,7 +250,7 @@ animation = &"standing"
 [sub_resource type="AnimationNodeTimeScale" id="AnimationNodeTimeScale_ccs8d"]
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_aboxt"]
-graph_offset = Vector2(-407.7481, 5.801544)
+graph_offset = Vector2(-288.90912, 65.181816)
 nodes/Animation/node = SubResource("AnimationNodeAnimation_6c7bh")
 nodes/Animation/position = Vector2(-120, 160)
 nodes/TimeScale/node = SubResource("AnimationNodeTimeScale_ccs8d")
@@ -441,6 +291,7 @@ switch_mode = 1
 switch_mode = 1
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_3db83"]
+states/Start/position = Vector2(201, 100)
 states/attack/node = SubResource("AnimationNodeBlendTree_p3k0f")
 states/attack/position = Vector2(543, 127)
 states/idle/node = SubResource("AnimationNodeBlendTree_aboxt")
@@ -608,32 +459,6 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("3_8vwo7")
 hframes = 6
 
-[node name="animatedAttack" type="AnimatedSprite2D" parent="." unique_id=2110849045]
-visible = false
-scale = Vector2(0.5, 0.5)
-sprite_frames = SubResource("SpriteFrames_il2ri")
-animation = &"attack"
-
-[node name="animatedwalk" type="AnimatedSprite2D" parent="." unique_id=1208393555]
-visible = false
-texture_filter = 4
-texture_repeat = 2
-position = Vector2(5.9999995, -10)
-scale = Vector2(0.6, 0.638)
-sprite_frames = SubResource("SpriteFrames_7ksya")
-animation = &"walk"
-offset = Vector2(5, 5)
-
-[node name="animatedstanding" type="AnimatedSprite2D" parent="." unique_id=1191710843]
-visible = false
-texture_filter = 4
-texture_repeat = 2
-position = Vector2(4.999999, -6.000002)
-scale = Vector2(0.6, 0.638)
-sprite_frames = SubResource("SpriteFrames_48d6w")
-animation = &"Standing"
-offset = Vector2(5, 5)
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=261238343]
 libraries/ = SubResource("AnimationLibrary_6c7bh")
 
@@ -682,5 +507,5 @@ scale = Vector2(0.99999994, 1)
 width = 16.0
 default_color = Color(0.2482489, 0.36749718, 0.3132713, 1)
 
-[node name="RastroBurbujas" type="CPUParticles2D" parent="." unique_id=102880436]
+[node name="RastroBurbujas" type="GPUParticles2D" parent="." unique_id=2051912088]
 script = ExtResource("8_g5j21")

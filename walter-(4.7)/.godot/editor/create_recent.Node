@@ -1,3 +1,5 @@
+GPUParticles2D
+VisibleOnScreenEnabler2D
 Sprite2D
 Timer
 CharacterBody2D
@@ -11,4 +13,3 @@ CanvasLayer
 Parallax2D
 ParallaxLayer
 TextureRect
-Control

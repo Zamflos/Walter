@@ -1,53 +1,60 @@
-extends CPUParticles2D
-# Hijo del Jugador. Deja un rastro de burbujas al moverte.
+extends GPUParticles2D
+# Hijo del Jugador. Deja un rastro de burbujas al moverte usando la GPU.
 
-@export var velocidad_minima: float = 200.0     # desde qué velocidad salen burbujas
-@export var cantidad: int = 26                  # más = rastro más denso
-@export var vida: float = 0.9                   # segundos que dura cada burbuja (menos = revientan antes)
-@export var ascenso: float = 150.0              # qué tan rápido suben
+@export var velocidad_minima: float = 200.0
+@export var cantidad: int = 26
+@export var vida: float = 0.9
+@export var ascenso: float = 150.0
 @export var tamano_min: float = 0.15
 @export var tamano_max: float = 0.45
 @export var color_burbuja: Color = Color(0.75, 0.95, 1.0, 0.9)
 @export var detras_del_jugador: bool = true
 
 var _padre: CharacterBody2D
+var _velocidad_min_sq: float
 
 func _ready() -> void:
 	_padre = get_parent() as CharacterBody2D
+	_velocidad_min_sq = velocidad_minima * velocidad_minima
 
 	emitting = false
-	local_coords = false          # las burbujas se quedan en el mundo, no siguen al jugador
+	local_coords = false
 	show_behind_parent = detras_del_jugador
+	fixed_fps = 30 # Reduce el cálculo a 30 FPS sin perder fluidez visual
 	texture = _crear_textura()
 
 	amount = cantidad
 	lifetime = vida
-	lifetime_randomness = 0.6     # unas revientan antes que otras
+	randomness = 0.6
 
-	emission_shape = CPUParticles2D.EMISSION_SHAPE_SPHERE
-	emission_sphere_radius = 70.0
+	# En GPUParticles2D toda la física va dentro de ParticleProcessMaterial
+	var mat := ParticleProcessMaterial.new()
+	mat.emission_shape = ParticleProcessMaterial.EMISSION_SHAPE_SPHERE
+	mat.emission_sphere_radius = 70.0
 
-	direction = Vector2.UP
-	spread = 40.0
-	initial_velocity_min = 20.0
-	initial_velocity_max = 70.0
-	gravity = Vector2(0.0, -ascenso)
-	damping_min = 30.0
-	damping_max = 70.0
+	mat.direction = Vector3(0.0, -1.0, 0.0)
+	mat.spread = 40.0
+	mat.initial_velocity_min = 20.0
+	mat.initial_velocity_max = 70.0
+	mat.gravity = Vector3(0.0, -ascenso, 0.0)
+	mat.damping_min = 30.0
+	mat.damping_max = 70.0
 
-	scale_amount_min = tamano_min
-	scale_amount_max = tamano_max
-	scale_amount_curve = _curva_reventon()
+	mat.scale_min = tamano_min
+	mat.scale_max = tamano_max
+	mat.scale_curve = _curva_reventon()
 
-	color = color_burbuja
-	color_ramp = _rampa_alfa()
+	mat.color = color_burbuja
+	mat.color_ramp = _rampa_alfa()
+
+	process_material = mat
 
 func _physics_process(_delta: float) -> void:
 	if _padre == null:
 		return
-	emitting = _padre.velocity.length() > velocidad_minima
+	# length_squared() evita calcular raíces cuadradas cada fotograma
+	emitting = _padre.velocity.length_squared() > _velocidad_min_sq
 
-# Burbuja hueca: centro casi transparente y borde brillante
 func _crear_textura() -> Texture2D:
 	var g := Gradient.new()
 	g.offsets = PackedFloat32Array([0.0, 0.6, 0.85, 1.0])
@@ -62,12 +69,11 @@ func _crear_textura() -> Texture2D:
 	t.fill = GradientTexture2D.FILL_RADIAL
 	t.fill_from = Vector2(0.5, 0.5)
 	t.fill_to = Vector2(1.0, 0.5)
-	t.width = 64
-	t.height = 64
+	t.width = 32 # 32x32 es más ligero en móvil e idéntico al escalar a 0.15-0.45
+	t.height = 32
 	return t
 
-# Crece un poco al nacer y se infla de golpe al final (el "pop")
-func _curva_reventon() -> Curve:
+func _curva_reventon() -> CurveTexture:
 	var c := Curve.new()
 	c.min_value = 0.0
 	c.max_value = 2.0
@@ -75,10 +81,12 @@ func _curva_reventon() -> Curve:
 	c.add_point(Vector2(0.15, 1.0))
 	c.add_point(Vector2(0.8, 1.0))
 	c.add_point(Vector2(1.0, 1.5))
-	return c
+	
+	var ct := CurveTexture.new()
+	ct.curve = c
+	return ct
 
-# Aparece rápido y se desvanece al final
-func _rampa_alfa() -> Gradient:
+func _rampa_alfa() -> GradientTexture1D:
 	var g := Gradient.new()
 	g.offsets = PackedFloat32Array([0.0, 0.1, 0.75, 1.0])
 	g.colors = PackedColorArray([
@@ -87,4 +95,7 @@ func _rampa_alfa() -> Gradient:
 		Color(1, 1, 1, 0.8),
 		Color(1, 1, 1, 0.0)
 	])
-	return g
+	
+	var gt := GradientTexture1D.new()
+	gt.gradient = g
+	return gt

@@ -68,3 +68,6 @@ collision_layer = 16
 position = Vector2(13.5, 1.5)
 shape = SubResource("RectangleShape2D_flqsk")
 debug_color = Color(1, 0.4, 0.1, 0.3)
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="." unique_id=1854916344]
+rect = Rect2(-86, -36, 166, 75)

@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwhsibpx6jtud"
-path="res://.godot/imported/Ocean2.png-c14665e85c0a40784933cf0c3be70023.ctex"
+path.s3tc="res://.godot/imported/Ocean2.png-c14665e85c0a40784933cf0c3be70023.s3tc.ctex"
+path.etc2="res://.godot/imported/Ocean2.png-c14665e85c0a40784933cf0c3be70023.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/Assets/fondozzz/Ocean2.png"
-dest_files=["res://.godot/imported/Ocean2.png-c14665e85c0a40784933cf0c3be70023.ctex"]
+dest_files=["res://.godot/imported/Ocean2.png-c14665e85c0a40784933cf0c3be70023.s3tc.ctex", "res://.godot/imported/Ocean2.png-c14665e85c0a40784933cf0c3be70023.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

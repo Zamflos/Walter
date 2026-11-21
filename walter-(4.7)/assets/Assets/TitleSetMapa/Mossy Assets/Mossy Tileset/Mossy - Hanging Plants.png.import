@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccjamqrkgp5x4"
-path="res://.godot/imported/Mossy - Hanging Plants.png-ad773a7c33e451b406fdd3206e444572.ctex"
+path.s3tc="res://.godot/imported/Mossy - Hanging Plants.png-ad773a7c33e451b406fdd3206e444572.s3tc.ctex"
+path.etc2="res://.godot/imported/Mossy - Hanging Plants.png-ad773a7c33e451b406fdd3206e444572.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/Assets/TitleSetMapa/Mossy Assets/Mossy Tileset/Mossy - Hanging Plants.png"
-dest_files=["res://.godot/imported/Mossy - Hanging Plants.png-ad773a7c33e451b406fdd3206e444572.ctex"]
+dest_files=["res://.godot/imported/Mossy - Hanging Plants.png-ad773a7c33e451b406fdd3206e444572.s3tc.ctex", "res://.godot/imported/Mossy - Hanging Plants.png-ad773a7c33e451b406fdd3206e444572.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
