@@ -1,10 +1,5 @@
-res://assets/Enemigos/EnemigoBasico.tscn
+res://assets/Escenas/Mapa.tscn
+res://assets/shaders and Efects/agua_abismo.gdshader
 res://assets/Player/diving_helmet_glass_ninepatch.gdshader
 res://assets/Player/HUB.gdshader
-res://jefe_1.tscn
-res://assets/Escenas/NivelBase.tscn
-res://assets/shaders and Efects/agua_abismo.gdshader
 res://assets/shaders and Efects/NivelBase.gdshader
-res://assets/Player/Jugador.tscn
-res://assets/Player/rastro_burbujas.gd
-res://assets/shaders and Efects/filtro_abismo.gd

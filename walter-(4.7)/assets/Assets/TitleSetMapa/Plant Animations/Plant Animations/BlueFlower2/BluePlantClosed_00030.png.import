@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4muurhkl3bot"
-path="res://.godot/imported/BluePlantClosed_00030.png-b58cc3b6008879ff2d39b63bed4dd418.ctex"
+path.s3tc="res://.godot/imported/BluePlantClosed_00030.png-b58cc3b6008879ff2d39b63bed4dd418.s3tc.ctex"
+path.etc2="res://.godot/imported/BluePlantClosed_00030.png-b58cc3b6008879ff2d39b63bed4dd418.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/Assets/TitleSetMapa/Plant Animations/Plant Animations/BlueFlower2/BluePlantClosed_00030.png"
-dest_files=["res://.godot/imported/BluePlantClosed_00030.png-b58cc3b6008879ff2d39b63bed4dd418.ctex"]
+dest_files=["res://.godot/imported/BluePlantClosed_00030.png-b58cc3b6008879ff2d39b63bed4dd418.s3tc.ctex", "res://.godot/imported/BluePlantClosed_00030.png-b58cc3b6008879ff2d39b63bed4dd418.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

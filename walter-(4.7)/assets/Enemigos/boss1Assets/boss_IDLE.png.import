@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bu00264rgvsdg"
-path="res://.godot/imported/boss_IDLE.png-6ca216c101803c84dd270d000a692356.ctex"
+path.s3tc="res://.godot/imported/boss_IDLE.png-6ca216c101803c84dd270d000a692356.s3tc.ctex"
+path.etc2="res://.godot/imported/boss_IDLE.png-6ca216c101803c84dd270d000a692356.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/Enemigos/boss1Assets/boss_IDLE.png"
-dest_files=["res://.godot/imported/boss_IDLE.png-6ca216c101803c84dd270d000a692356.ctex"]
+dest_files=["res://.godot/imported/boss_IDLE.png-6ca216c101803c84dd270d000a692356.s3tc.ctex", "res://.godot/imported/boss_IDLE.png-6ca216c101803c84dd270d000a692356.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

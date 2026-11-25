@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4n2rhaj5rugx"
-path="res://.godot/imported/PlantPosion_00019.png-c7e292b2d9095c003ef681ef6f674cd8.ctex"
+path.s3tc="res://.godot/imported/PlantPosion_00019.png-c7e292b2d9095c003ef681ef6f674cd8.s3tc.ctex"
+path.etc2="res://.godot/imported/PlantPosion_00019.png-c7e292b2d9095c003ef681ef6f674cd8.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/Assets/TitleSetMapa/Plant Animations/Plant Animations/Plant 8 Poison/PlantPosion_00019.png"
-dest_files=["res://.godot/imported/PlantPosion_00019.png-c7e292b2d9095c003ef681ef6f674cd8.ctex"]
+dest_files=["res://.godot/imported/PlantPosion_00019.png-c7e292b2d9095c003ef681ef6f674cd8.s3tc.ctex", "res://.godot/imported/PlantPosion_00019.png-c7e292b2d9095c003ef681ef6f674cd8.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

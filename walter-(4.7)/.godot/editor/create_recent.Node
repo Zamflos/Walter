@@ -1,6 +1,6 @@
+Sprite2D
 GPUParticles2D
 VisibleOnScreenEnabler2D
-Sprite2D
 Timer
 CharacterBody2D
 CollisionShape2D
@@ -12,4 +12,3 @@ ColorRect
 CanvasLayer
 Parallax2D
 ParallaxLayer
-TextureRect

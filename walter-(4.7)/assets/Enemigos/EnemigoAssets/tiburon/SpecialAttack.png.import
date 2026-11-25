@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi7my5133x6ro"
-path="res://.godot/imported/SpecialAttack.png-b423bd363ce730f26d8698e48ac1b29e.ctex"
+path.s3tc="res://.godot/imported/SpecialAttack.png-b423bd363ce730f26d8698e48ac1b29e.s3tc.ctex"
+path.etc2="res://.godot/imported/SpecialAttack.png-b423bd363ce730f26d8698e48ac1b29e.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/Enemigos/EnemigoAssets/tiburon/SpecialAttack.png"
-dest_files=["res://.godot/imported/SpecialAttack.png-b423bd363ce730f26d8698e48ac1b29e.ctex"]
+dest_files=["res://.godot/imported/SpecialAttack.png-b423bd363ce730f26d8698e48ac1b29e.s3tc.ctex", "res://.godot/imported/SpecialAttack.png-b423bd363ce730f26d8698e48ac1b29e.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

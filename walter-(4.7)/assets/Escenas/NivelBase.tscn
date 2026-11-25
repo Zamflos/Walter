@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://nub17vswsmje" path="res://assets/Player/HUB.tscn" id="4_f3834"]
 [ext_resource type="PackedScene" uid="uid://blvlq0k6tl81j" path="res://assets/shaders and Efects/paralax.tscn" id="4_vjx6r"]
 [ext_resource type="PackedScene" uid="uid://cg7qt4sika6tn" path="res://assets/Enemigos/EnemigoBasico.tscn" id="5_osip8"]
-[ext_resource type="PackedScene" uid="uid://n76u1lkpvlwm" path="res://assets/Escenas/nivel_01.tscn" id="8_5o5id"]
 [ext_resource type="PackedScene" uid="uid://d0lagqgtmx7nj" path="res://assets/Escenas/Mapa.tscn" id="8_vjx6r"]
 [ext_resource type="PackedScene" uid="uid://drs1baj5hq46p" path="res://jefe_1.tscn" id="12_kacag"]
 
@@ -82,12 +81,6 @@ motion_mode = 1
 position = Vector2(6872, 2680)
 scale = Vector2(3, 3)
 motion_mode = 1
-
-[node name="Nivel_01" parent="." unique_id=918656854 instance=ExtResource("8_5o5id")]
-visible = false
-z_index = -2
-position = Vector2(-34834, -16843)
-scale = Vector2(20, 20)
 
 [node name="Mapa" parent="." unique_id=720613284 instance=ExtResource("8_vjx6r")]
 position = Vector2(4013, 4256)
