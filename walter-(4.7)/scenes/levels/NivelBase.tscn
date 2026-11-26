@@ -71,7 +71,7 @@ scale = Vector2(2.34, 2.34)
 [node name="ControlesTactiles" parent="." unique_id=1619539230 instance=ExtResource("3_qm8rf")]
 
 [node name="HUB" parent="." unique_id=1434394209 instance=ExtResource("4_f3834")]
-script = null
+
 
 [node name="Enemigo1" parent="." unique_id=572441692 instance=ExtResource("5_osip8")]
 position = Vector2(7424, 4226)

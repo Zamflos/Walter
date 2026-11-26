@@ -2,10 +2,9 @@ extends CanvasLayer
 
 @onready var barra_salud: ProgressBar = $BarraSalud
 @onready var barra_bilis: ProgressBar = $BarraBilis
-@onready var label_tanques: Label = $LabelTanques
 @onready var panel_inventario: Panel = $PanelInventario
 @onready var btn_pausa: Button = $BtnPausa
-@onready var menu_pausa: CanvasLayer = $Pausa
+@onready var menu_pausa: CanvasLayer = $Node2D   # ← nombre real del nodo de pausa
 
 # Exportamos las dos texturas para asignarlas fácilmente desde el Inspector
 @export var textura_tanque_lleno: Texture2D
@@ -20,6 +19,10 @@ func _ready() -> void:
 	if panel_inventario:
 		panel_inventario.visible = false
 
+	# Conectar el botón de pausa siempre (no depende del jugador)
+	if btn_pausa and menu_pausa:
+		btn_pausa.pressed.connect(_on_pausa_pressed)
+
 	var jugador = get_tree().get_first_node_in_group("jugadores")
 	if jugador:
 		if jugador.has_signal("salud_cambiada"):
@@ -28,7 +31,6 @@ func _ready() -> void:
 			jugador.bilis_cambiada.connect(_on_bilis_cambiada)
 		if jugador.has_signal("inventario_alternado"):
 			jugador.inventario_alternado.connect(_on_inventario_alternado)
-			btn_pausa.pressed.connect(_on_pausa_pressed)
 
 func _on_salud_cambiada(salud: float, tanques: int) -> void:
 	if barra_salud:

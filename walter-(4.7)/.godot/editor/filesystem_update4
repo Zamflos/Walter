@@ -5,3 +5,5 @@ res://scripts/ui/main_menu.gd
 res://scripts/ui/pausa.gd
 res://scripts/ui/UI.gd
 res://scenes/ui/HUB.tscn
+res://scenes/menus/pausa.tscn
+res://scenes/menus/Main_menu.tscn

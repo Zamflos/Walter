@@ -134,6 +134,10 @@ func _ready() -> void:
 		# Conectar la señal para que al soltar el stick dispare
 		if joystick_arpon and joystick_arpon.has_signal("disparar_arpón"):
 			joystick_arpon.disparar_arpón.connect(_on_joystick_disparar)
+			# Cargar partida si venimos del botón "Cargar"
+	if SaveManager.has_meta("cargar_al_iniciar") and SaveManager.get_meta("cargar_al_iniciar"):
+		SaveManager.cargar(self)
+		SaveManager.remove_meta("cargar_al_iniciar")
 
 func _on_joystick_disparar(dir: Vector2) -> void:
 	# Forzamos el disparo en la dirección del stick

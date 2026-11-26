@@ -31,29 +31,12 @@ func _on_continuar() -> void:
 
 func _on_guardar() -> void:
 	var jugador = get_tree().get_first_node_in_group("jugadores")
-	if jugador:
-		var config := ConfigFile.new()
-		config.set_value("save", "position", jugador.global_position)
-		config.set_value("save", "salud", jugador.salud_actual)
-		config.set_value("save", "tanques", jugador.tanques_reserva)
-		config.save("user://save.cfg")
-		print("Partida guardada")
+	SaveManager.guardar(jugador)
 	despausar()
 
 func _on_cargar() -> void:
-	var config := ConfigFile.new()
-	if config.load("user://save.cfg") != OK:
-		print("No hay partida guardada")
-		return
-	
 	var jugador = get_tree().get_first_node_in_group("jugadores")
-	if jugador:
-		jugador.global_position = config.get_value("save", "position")
-		jugador.salud_actual = config.get_value("save", "salud")
-		jugador.tanques_reserva = config.get_value("save", "tanques")
-		if jugador.has_signal("salud_cambiada"):
-			jugador.salud_cambiada.emit(jugador.salud_actual, jugador.tanques_reserva)
-		print("Partida cargada")
+	SaveManager.cargar(jugador)
 	despausar()
 
 func _on_menu() -> void:

@@ -8,38 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://ds3wrdg5yfd6v" path="res://assets/sprites/ui/Vector/Icons/icon_menu.svg" id="6_ohw52"]
 [ext_resource type="PackedScene" uid="uid://2wmk68ud2i8n" path="res://scenes/menus/pausa.tscn" id="7_b7ag8"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_vhd36"]
-shader = ExtResource("5_dn7c2")
-shader_parameter/aspect = 2.2
-shader_parameter/use_screen_refraction = true
-shader_parameter/glass_opacity = 0.86000004085
-shader_parameter/detail_opacity = 1.0
-shader_parameter/corner_radius = 0.4350000206625
-shader_parameter/corner_feather = 0.13000000582574
-shader_parameter/corner_fade = 0.28800001368
-shader_parameter/fade_curve = 0.84800001653
-shader_parameter/corner_darken = 0.6210000294975
-shader_parameter/glass_tint = Color(0.101960786, 0.38039216, 0.34117648, 0.11372549)
-shader_parameter/deep_tint = Color(0.018679623, 0.10677789, 0.12104194, 0.39607844)
-shader_parameter/vignette_start = 0.32800001558
-shader_parameter/vignette_strength = 0.6410000304475
-shader_parameter/refraction = 0.012
-shader_parameter/chroma = 1.2
-shader_parameter/wobble_amount = 0.004
-shader_parameter/blur = 0.8
-shader_parameter/reflection_strength = 0.35
-shader_parameter/streak_angle = 28.0
-shader_parameter/streak_offset = -0.9
-shader_parameter/reflection_color = Color(0.85, 1, 0.95, 1)
-shader_parameter/caustic_color = Color(0.4509804, 1, 0.8, 1)
-shader_parameter/caustic_strength = 0.00400000019
-shader_parameter/caustic_speed = 0.070000003325
-shader_parameter/condensation = 0.1870000088825
-shader_parameter/fog_color = Color(0.54901963, 0.8, 0.7490196, 1)
-shader_parameter/drop_density = 21.930000566675
-shader_parameter/rim_strength = 0.0930000044175
-shader_parameter/grain = 0.06800000323
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6873a"]
 shader = ExtResource("4_6873a")
 shader_parameter/rect_size = Vector2(420, 200)
@@ -76,19 +44,71 @@ shader_parameter/grain = 0.0210000009975
 
 [sub_resource type="Theme" id="Theme_dn7c2"]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vhd36"]
+shader = ExtResource("5_dn7c2")
+shader_parameter/aspect = 2.2
+shader_parameter/use_screen_refraction = true
+shader_parameter/glass_opacity = 0.86000004085
+shader_parameter/detail_opacity = 1.0
+shader_parameter/corner_radius = 0.4350000206625
+shader_parameter/corner_feather = 0.13000000582574
+shader_parameter/corner_fade = 0.28800001368
+shader_parameter/fade_curve = 0.84800001653
+shader_parameter/corner_darken = 0.6210000294975
+shader_parameter/glass_tint = Color(0.101960786, 0.38039216, 0.34117648, 0.11372549)
+shader_parameter/deep_tint = Color(0.018679623, 0.10677789, 0.12104194, 0.39607844)
+shader_parameter/vignette_start = 0.32800001558
+shader_parameter/vignette_strength = 0.6410000304475
+shader_parameter/refraction = 0.012
+shader_parameter/chroma = 1.2
+shader_parameter/wobble_amount = 0.004
+shader_parameter/blur = 0.8
+shader_parameter/reflection_strength = 0.35
+shader_parameter/streak_angle = 28.0
+shader_parameter/streak_offset = -0.9
+shader_parameter/reflection_color = Color(0.85, 1, 0.95, 1)
+shader_parameter/caustic_color = Color(0.4509804, 1, 0.8, 1)
+shader_parameter/caustic_strength = 0.00400000019
+shader_parameter/caustic_speed = 0.070000003325
+shader_parameter/condensation = 0.1870000088825
+shader_parameter/fog_color = Color(0.54901963, 0.8, 0.7490196, 1)
+shader_parameter/drop_density = 21.930000566675
+shader_parameter/rim_strength = 0.0930000044175
+shader_parameter/grain = 0.06800000323
+
 [node name="HUB" type="CanvasLayer" unique_id=493275506]
 layer = 10
 script = ExtResource("1_wb85q")
 
-[node name="FondoHUD" type="ColorRect" parent="." unique_id=1998560421]
-z_index = 1
-material = SubResource("ShaderMaterial_vhd36")
-offset_left = 24.0
-offset_top = 18.0
-offset_right = 306.0
-offset_bottom = 152.0
-mouse_filter = 2
-color = Color(0, 0, 0, 0.2509804)
+[node name="PanelInventario" type="Panel" parent="." unique_id=9841148]
+visible = false
+offset_left = 380.0
+offset_top = 80.0
+offset_right = 720.0
+offset_bottom = 340.0
+
+[node name="BtnPausa" type="Button" parent="." unique_id=1492439947]
+anchors_preset = -1
+anchor_left = 0.952
+anchor_top = 0.007
+anchor_right = 0.99600005
+anchor_bottom = 0.087000005
+offset_left = 0.4399414
+offset_top = 1.96
+offset_right = 0.11987305
+offset_bottom = 0.3599968
+icon = ExtResource("6_ohw52")
+
+[node name="Node2D" parent="." unique_id=2015327865 instance=ExtResource("7_b7ag8")]
+
+[node name="BarraSalud" type="ProgressBar" parent="." unique_id=17925549]
+modulate = Color(0.3, 0.85, 0.4, 1)
+offset_left = 44.0
+offset_top = 85.0
+offset_right = 286.0
+offset_bottom = 102.0
+value = 100.0
+show_percentage = false
 
 [node name="Tanque1" type="TextureRect" parent="." unique_id=1251101656]
 texture_filter = 4
@@ -118,13 +138,12 @@ texture = ExtResource("2_oa3m5")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="BarraSalud" type="ProgressBar" parent="." unique_id=17925549]
-modulate = Color(0.3, 0.85, 0.4, 1)
+[node name="BarraBilis" type="ProgressBar" parent="." unique_id=1569453513]
+modulate = Color(0.95, 0.7, 0.15, 1)
 offset_left = 44.0
-offset_top = 85.0
+offset_top = 107.0
 offset_right = 286.0
-offset_bottom = 102.0
-value = 100.0
+offset_bottom = 127.0
 show_percentage = false
 
 [node name="LabelSalud" type="Label" parent="." unique_id=264999925]
@@ -134,27 +153,12 @@ offset_right = 130.0
 offset_bottom = 106.0
 text = "Tubo"
 
-[node name="BarraBilis" type="ProgressBar" parent="." unique_id=1569453513]
-modulate = Color(0.95, 0.7, 0.15, 1)
-offset_left = 44.0
-offset_top = 107.0
-offset_right = 286.0
-offset_bottom = 127.0
-show_percentage = false
-
 [node name="LabelBilis" type="Label" parent="." unique_id=895517222]
 offset_left = 56.0
 offset_top = 104.0
 offset_right = 146.0
 offset_bottom = 127.0
 text = "Bilis"
-
-[node name="PanelInventario" type="Panel" parent="." unique_id=9841148]
-visible = false
-offset_left = 380.0
-offset_top = 80.0
-offset_right = 720.0
-offset_bottom = 340.0
 
 [node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=777215378]
 material = SubResource("ShaderMaterial_6873a")
@@ -165,16 +169,13 @@ offset_bottom = 177.0
 theme = SubResource("Theme_dn7c2")
 texture = ExtResource("4_cwgh2")
 
-[node name="BtnPausa" type="Button" parent="." unique_id=1492439947]
-anchors_preset = -1
-anchor_left = 0.33400002
-anchor_top = 0.007
-anchor_right = 0.37800002
-anchor_bottom = 0.085
-offset_left = 0.47998047
-offset_top = -0.03999996
-offset_right = 0.15997314
-offset_bottom = -0.20000076
-icon = ExtResource("6_ohw52")
-
-[node name="Node2D" parent="." unique_id=2015327865 instance=ExtResource("7_b7ag8")]
+[node name="FondoHUD" type="ColorRect" parent="NinePatchRect" unique_id=1998560421]
+z_index = -1
+material = SubResource("ShaderMaterial_vhd36")
+layout_mode = 0
+offset_left = 33.0
+offset_top = 21.0
+offset_right = 315.0
+offset_bottom = 155.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.2509804)

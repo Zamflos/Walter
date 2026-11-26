@@ -58,6 +58,11 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "Iniciar"
 
+[node name="BtnCargar" type="Button" parent="Botones" unique_id=1238840327]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Cargar Partida"
+
 [node name="BtnOpciones" type="Button" parent="Botones" unique_id=566213222]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40

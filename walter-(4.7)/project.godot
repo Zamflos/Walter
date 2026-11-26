@@ -6,6 +6,10 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
+[autoload]
+Settings="*res://scripts/ui/settings_autoload.gd"
+SaveManager="*res://scripts/ui/save_manager.gd"
+
 config_version=5
 
 [accessibility]
