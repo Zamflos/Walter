@@ -1,3 +1,7 @@
+Button
+VBoxContainer
+Panel
+CanvasLayer
 Sprite2D
 GPUParticles2D
 VisibleOnScreenEnabler2D
@@ -8,7 +12,3 @@ Area2D
 AnimatedSprite2D
 NinePatchRect
 CPUParticles2D
-ColorRect
-CanvasLayer
-Parallax2D
-ParallaxLayer

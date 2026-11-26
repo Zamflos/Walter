@@ -4,6 +4,8 @@ extends CanvasLayer
 @onready var barra_bilis: ProgressBar = $BarraBilis
 @onready var label_tanques: Label = $LabelTanques
 @onready var panel_inventario: Panel = $PanelInventario
+@onready var btn_pausa: Button = $BtnPausa
+@onready var menu_pausa: CanvasLayer = $Pausa
 
 # Exportamos las dos texturas para asignarlas fácilmente desde el Inspector
 @export var textura_tanque_lleno: Texture2D
@@ -26,6 +28,7 @@ func _ready() -> void:
 			jugador.bilis_cambiada.connect(_on_bilis_cambiada)
 		if jugador.has_signal("inventario_alternado"):
 			jugador.inventario_alternado.connect(_on_inventario_alternado)
+			btn_pausa.pressed.connect(_on_pausa_pressed)
 
 func _on_salud_cambiada(salud: float, tanques: int) -> void:
 	if barra_salud:
@@ -50,3 +53,7 @@ func _on_bilis_cambiada(nuevo_valor: float) -> void:
 func _on_inventario_alternado() -> void:
 	if panel_inventario:
 		panel_inventario.visible = not panel_inventario.visible
+
+func _on_pausa_pressed() -> void:
+	if menu_pausa:
+		menu_pausa.pausar()

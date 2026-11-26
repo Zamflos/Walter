@@ -178,6 +178,10 @@ func calcular_salto() -> void:
 	vel_doble_salto = -sqrt(2.0 * grav_subida * altura_doble_salto)
 
 func _physics_process(delta: float) -> void:
+	
+	if get_tree().paused:
+		return
+		
 	var direccion: float = Input.get_axis("mover_izquierda", "mover_derecha")
 
 	if tiempo_recarga_dash > 0.0:

@@ -5,6 +5,8 @@
 [ext_resource type="Shader" uid="uid://duys4mpqpgum2" path="res://assets/sprites/effects/diving_helmet_glass_ninepatch.gdshader" id="4_6873a"]
 [ext_resource type="Texture2D" uid="uid://dibnd18g3fs0y" path="res://assets/sprites/ui/Marco/7583b58d-378b-4e16-a0f3-9001273f7d62.png" id="4_cwgh2"]
 [ext_resource type="Shader" uid="uid://dsipf1o55jyjx" path="res://assets/shaders/HUB.gdshader" id="5_dn7c2"]
+[ext_resource type="Texture2D" uid="uid://ds3wrdg5yfd6v" path="res://assets/sprites/ui/Vector/Icons/icon_menu.svg" id="6_ohw52"]
+[ext_resource type="PackedScene" uid="uid://2wmk68ud2i8n" path="res://scenes/menus/pausa.tscn" id="7_b7ag8"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vhd36"]
 shader = ExtResource("5_dn7c2")
@@ -162,3 +164,17 @@ offset_right = 339.0
 offset_bottom = 177.0
 theme = SubResource("Theme_dn7c2")
 texture = ExtResource("4_cwgh2")
+
+[node name="BtnPausa" type="Button" parent="." unique_id=1492439947]
+anchors_preset = -1
+anchor_left = 0.33400002
+anchor_top = 0.007
+anchor_right = 0.37800002
+anchor_bottom = 0.085
+offset_left = 0.47998047
+offset_top = -0.03999996
+offset_right = 0.15997314
+offset_bottom = -0.20000076
+icon = ExtResource("6_ohw52")
+
+[node name="Node2D" parent="." unique_id=2015327865 instance=ExtResource("7_b7ag8")]
