@@ -11,7 +11,7 @@ enum Estado { INACTIVO, LANZANDO, ENGANCHADO, REGRESANDO }
 @export var rapidez_lanzamiento: float = 6000.0 # qué tan rápido viaja la punta
 @export var rapidez_regreso: float = 8000.0     # qué tan rápido regresa si no pega
 @export var recarga: float = 0.3
-@export_flags_2d_physics var capas_enganchables: int = 1  # capas de colisión donde se puede enganchar
+@export_flags_2d_physics var capas_enganchables: int = 8  # capas de colisión donde se puede enganchar (capa 4 = Mapa)
 @export var largo_arpon: float = 0.0  # largo del sprite del arpón: la cuerda se amarra en la parte de atrás
 
 @onready var cuerda: Line2D = $Cuerda
