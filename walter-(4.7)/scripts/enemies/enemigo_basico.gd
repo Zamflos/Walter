@@ -77,7 +77,7 @@ func _on_area_dano_body_entered(body: Node2D) -> void:
 		return
 	
 	if body.is_in_group("jugadores") and body.has_method("recibir_danio"):
-		body.recibir_danio(dano_contacto)
+		body.recibir_danio(dano_contacto, global_position)
 		print("¡Enemigo atacó! Vida del jugador: ", body.salud_actual)  # Para depurar
 		
 		puede_hacer_dano = false
