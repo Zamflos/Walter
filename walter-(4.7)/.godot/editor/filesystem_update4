@@ -1,11 +1,4 @@
-res://scenes/menus/Main_menu.tscn
-res://scripts/ui/main_menu.gd
 res://scenes/levels/NivelBase.tscn
+res://assets/sprites/effects/paralax.tscn
+res://scenes/levels/Mapa.tscn
 res://scenes/player/Jugador.tscn
-res://scenes/player/Arpon.tscn
-res://scenes/ui/ControlesTactiles.tscn
-res://scenes/ui/HUB.tscn
-res://scenes/enemies/jefe_1.tscn
-res://scenes/enemies/EnemigoBasico.tscn
-res://scenes/ui/PantallaMuerte.tscn
-res://scripts/ui/joystick.gd

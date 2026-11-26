@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b3yoo6jhxskgs"]
 
 [ext_resource type="Script" uid="uid://djoqg0t2jl464" path="res://scripts/player/jugador.gd" id="1_kgd11"]
+[ext_resource type="PackedScene" uid="uid://on6koeit374w" path="res://scenes/player/Arpon.tscn" id="2_yauuf"]
 [ext_resource type="Texture2D" uid="uid://b1ebgriue203f" path="res://assets/sprites/player/Running/fotograma0000-0.png" id="3_8vwo7"]
 [ext_resource type="Texture2D" uid="uid://k2afubod3div" path="res://assets/sprites/player/atack/ataque.png" id="3_v1h6a"]
 [ext_resource type="Texture2D" uid="uid://dhtuxr3unrhd0" path="res://assets/sprites/player/player_stading/StandingPlayer (1)-0.png" id="4_kg3ks"]
@@ -299,8 +300,9 @@ states/walk/node = SubResource("AnimationNodeBlendTree_1rhi5")
 states/walk/position = Vector2(369, 50)
 transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_hixxi"), "idle", "walk", SubResource("AnimationNodeStateMachineTransition_ie45i"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_cedo5"), "idle", "attack", SubResource("AnimationNodeStateMachineTransition_lp24k"), "attack", "idle", SubResource("AnimationNodeStateMachineTransition_8ob6m"), "walk", "attack", SubResource("AnimationNodeStateMachineTransition_yl20d"), "attack", "walk", SubResource("AnimationNodeStateMachineTransition_p88kk")]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qhgme"]
-size = Vector2(89, 160)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3x76v"]
+radius = 65.0
+height = 190.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_su64b"]
 atlas = ExtResource("16_qhgme")
@@ -450,6 +452,7 @@ animations = [{
 collision_layer = 9
 collision_mask = 8
 script = ExtResource("1_kgd11")
+arpon_scene = ExtResource("2_yauuf")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=509829001]
 position = Vector2(12, 12)
@@ -469,11 +472,11 @@ parameters/walk/TimeScale/scale = 1.5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1587166060]
 position = Vector2(-2, 22)
-shape = SubResource("RectangleShape2D_qhgme")
+shape = SubResource("CapsuleShape2D_3x76v")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=281917363]
 position = Vector2(17, -296)
-zoom = Vector2(0.2, 0.2)
+zoom = Vector2(0.15, 0.15)
 limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 1.0
@@ -486,6 +489,7 @@ position = Vector2(1, 21)
 [node name="Gancho" type="Node2D" parent="." unique_id=1099515303]
 position = Vector2(36, 3)
 script = ExtResource("5_3x76v")
+capas_enganchables = 9
 
 [node name="Punta" type="AnimatedSprite2D" parent="Gancho" unique_id=678293053]
 texture_filter = 4

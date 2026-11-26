@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://dtad08wpob8gy" path="res://assets/shaders/filtro_abismo.gd" id="2_iwaro"]
 [ext_resource type="PackedScene" uid="uid://ctwno0je22hx7" path="res://scenes/ui/ControlesTactiles.tscn" id="3_qm8rf"]
 [ext_resource type="PackedScene" uid="uid://nub17vswsmje" path="res://scenes/ui/HUB.tscn" id="4_f3834"]
-[ext_resource type="Script" uid="uid://djoqg0t2jl464" path="res://scripts/player/jugador.gd" id="4_ifea4"]
 [ext_resource type="PackedScene" uid="uid://blvlq0k6tl81j" path="res://assets/sprites/effects/paralax.tscn" id="4_vjx6r"]
 [ext_resource type="PackedScene" uid="uid://cg7qt4sika6tn" path="res://scenes/enemies/EnemigoBasico.tscn" id="5_osip8"]
 [ext_resource type="PackedScene" uid="uid://d0lagqgtmx7nj" path="res://scenes/levels/Mapa.tscn" id="8_vjx6r"]
@@ -66,10 +65,8 @@ y_superficie = -21737.0
 y_abismo = 6883.0
 
 [node name="Jugador" parent="." unique_id=156308201 instance=ExtResource("1_vdcwy")]
-position = Vector2(-34500, -8888)
+position = Vector2(-24398, -5498.9995)
 scale = Vector2(2.34, 2.34)
-script = ExtResource("4_ifea4")
-arpon_scene = null
 
 [node name="ControlesTactiles" parent="." unique_id=1619539230 instance=ExtResource("3_qm8rf")]
 
