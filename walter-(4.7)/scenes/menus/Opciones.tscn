@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://opcionesmenu001"]
+[gd_scene format=3 uid="uid://dtqum0pffiv5a"]
 
 [ext_resource type="Script" path="res://scripts/ui/opciones.gd" id="1_opciones"]
 
